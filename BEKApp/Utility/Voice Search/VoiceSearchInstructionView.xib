@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BerninoSans-CondensedRegular.otf">
+            <string>BerninoSans-Condensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VoiceSearchInstructionView" customModule="BEKApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-oM-GXt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-Yh-RjE">
+                            <rect key="frame" x="29" y="233.5" width="317" height="200"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rC-Ds-6Zt">
+                                    <rect key="frame" x="16" y="139" width="285" height="45"/>
+                                    <color key="backgroundColor" red="0.1764705882" green="0.34509803919999998" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Vjk-62-rr0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="BerninoSans-Condensed" family="Bernino Sans" pointSize="20"/>
+                                    <state key="normal" title="Start">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi please tell us what you want to search. I'm listening." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGw-KE-Gu8">
+                                    <rect key="frame" x="16" y="10" width="285" height="55.5"/>
+                                    <fontDescription key="fontDescription" name="BerninoSans-Condensed" family="Bernino Sans" pointSize="20"/>
+                                    <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rGw-KE-Gu8" firstAttribute="leading" secondItem="b7E-Yh-RjE" secondAttribute="leading" constant="16" id="24k-PQ-yv9"/>
+                                <constraint firstItem="8rC-Ds-6Zt" firstAttribute="leading" secondItem="b7E-Yh-RjE" secondAttribute="leading" constant="16" id="4fO-bH-yBq"/>
+                                <constraint firstAttribute="trailing" secondItem="rGw-KE-Gu8" secondAttribute="trailing" constant="16" id="Hnu-xe-swI"/>
+                                <constraint firstAttribute="bottom" secondItem="8rC-Ds-6Zt" secondAttribute="bottom" constant="16" id="JgQ-hG-sDD"/>
+                                <constraint firstItem="rGw-KE-Gu8" firstAttribute="top" secondItem="b7E-Yh-RjE" secondAttribute="top" constant="10" id="Rnx-Ck-r0G"/>
+                                <constraint firstAttribute="trailing" secondItem="8rC-Ds-6Zt" secondAttribute="trailing" constant="16" id="fWp-jK-cb1"/>
+                                <constraint firstAttribute="width" secondItem="b7E-Yh-RjE" secondAttribute="height" multiplier="317:200" id="vu7-3Q-9cr"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wG-5C-bZa">
+                            <rect key="frame" x="315" y="44" width="44" height="32"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.29825044010000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b7E-Yh-RjE" firstAttribute="centerY" secondItem="wZg-oM-GXt" secondAttribute="centerY" id="0Ks-eh-Sqp"/>
+                        <constraint firstAttribute="trailing" secondItem="b7E-Yh-RjE" secondAttribute="trailing" constant="29" id="CWe-WP-Laa"/>
+                        <constraint firstItem="b7E-Yh-RjE" firstAttribute="centerX" secondItem="wZg-oM-GXt" secondAttribute="centerX" id="Jzj-zE-nXT"/>
+                        <constraint firstItem="3wG-5C-bZa" firstAttribute="top" secondItem="wZg-oM-GXt" secondAttribute="top" constant="44" id="LaT-kq-S9I"/>
+                        <constraint firstItem="b7E-Yh-RjE" firstAttribute="leading" secondItem="wZg-oM-GXt" secondAttribute="leading" constant="29" id="RT1-IG-jSe"/>
+                        <constraint firstAttribute="trailing" secondItem="3wG-5C-bZa" secondAttribute="trailing" constant="16" id="dzs-gn-KHi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wZg-oM-GXt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kub-Vt-CVv"/>
+                <constraint firstAttribute="trailing" secondItem="wZg-oM-GXt" secondAttribute="trailing" id="Mmg-lv-W7L"/>
+                <constraint firstAttribute="bottom" secondItem="wZg-oM-GXt" secondAttribute="bottom" id="lM1-vF-0lR"/>
+                <constraint firstItem="wZg-oM-GXt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vgZ-PB-oMm"/>
+            </constraints>
+            <connections>
+                <outlet property="btnClose" destination="3wG-5C-bZa" id="9rp-iw-DeU"/>
+                <outlet property="btnMicrophone" destination="8rC-Ds-6Zt" id="QeE-46-nue"/>
+                <outlet property="lblSpeechInstruction" destination="rGw-KE-Gu8" id="Gl2-UI-P7u"/>
+                <outlet property="vwSpeechInstruction" destination="b7E-Yh-RjE" id="YcL-Nf-4dg"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="145.72713643178412"/>
+        </view>
+    </objects>
+</document>

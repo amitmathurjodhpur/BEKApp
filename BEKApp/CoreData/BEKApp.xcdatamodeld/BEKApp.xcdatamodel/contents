@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ProductList" representedClassName="ProductList" syncable="YES" codeGenerationType="class">
+        <attribute name="hotelId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hotelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemMargin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemPerBagQuantity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemProductionCost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemQuantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemSubTotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemUnitPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Cart" representedClassName="Cart" syncable="YES" codeGenerationType="class">
+        <attribute name="hotelId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hotelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemMargin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemPerBagQuantity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemProductionCost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemQuantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemSubTotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemUnitPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toppings" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Toppings" inverseName="cart" inverseEntity="Toppings" syncable="YES"/>
+    </entity>
+    <entity name="Toppings" representedClassName="Toppings" syncable="YES" codeGenerationType="class">
+        <attribute name="toppingId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toppingName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toppingPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="cart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cart" inverseName="toppings" inverseEntity="Cart" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cart" positionX="185.8359375" positionY="-85.3359375" width="128" height="223"/>
+        <element name="Toppings" positionX="-1.75" positionY="-81.76171875" width="128" height="105"/>
+    </elements>
+</model>
