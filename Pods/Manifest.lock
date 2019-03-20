@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.8.1)
+  - BHTextFieldManager (1.0.3)
+  - ObjectMapper (3.4.2)
+  - ReachabilitySwift (4.3.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - BHTextFieldManager
+  - ObjectMapper (~> 3.3)
+  - ReachabilitySwift
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BHTextFieldManager
+    - ObjectMapper
+    - ReachabilitySwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  BHTextFieldManager: 7e71e7ed067323b01cfdef4bda727bd67c320404
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 0e2eb80d0d64a8fd884cb63c6da4950a301e114f
+
+COCOAPODS: 1.5.3
