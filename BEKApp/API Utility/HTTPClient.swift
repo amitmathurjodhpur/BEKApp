@@ -11,7 +11,7 @@ struct HTTPClient {
     
 //    static let urlCOMMERCE_SITENAME = "COMMERCE_SITENAME"
     enum BaseURL: String {
-        case Development = "https://bek.usdemo.hybris.com"
+        case Development =  "https://bek.usdemo.hybris.com"
         case Production = "Production"
     }
     

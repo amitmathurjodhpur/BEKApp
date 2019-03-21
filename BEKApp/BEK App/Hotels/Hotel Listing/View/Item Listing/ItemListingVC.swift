@@ -40,7 +40,7 @@ class ItemListingVC: BaseVC {
      @IBOutlet weak var popupDesc: UILabel!
     
     @IBOutlet weak var lblVCTitle: UILabel!
-    
+    var imageDict: Dictionary<String, String> = [:]
     private var isClientModeOn: Bool! = true {
         didSet {
             if self.isClientModeOn {
@@ -166,6 +166,18 @@ extension ItemListingVC {
         //        self.arrFilteredDatasource.append((model: DSRCartItemListModel(with: Int64(Int(self.hotelDetails.hotelId) ?? 0), hotelName: self.hotelDetails.hotelName, itemId: 1, itemMargin: 0.0, itemName: "Chicken Wings Spicy Buffalo", itemPerBagQuantity: "", itemProductionCost: 36.68, itemQuantity: 0, itemSubTotal: 0.0, itemTitle: "Predue", itemUnitPrice: 36.68), collapsed: false))
         self.getItemListAPICall()
         self.setupUI()
+        
+        if let path = Bundle.main.path(forResource: "products", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? Dictionary<String, String> {
+                     imageDict = jsonResult
+                }
+            } catch {
+                print("Error")
+            }
+        }
     }
     
     private func setupUI() {
@@ -557,6 +569,13 @@ extension ItemListingVC {
         }
     }
     
+    func getImageName(productName: String) -> String {
+        if let jsonResult = imageDict as Dictionary<String, String>?, let product = jsonResult[caseInsensitive: productName] {
+            print(product)
+            return product
+        }
+        return "155195.jpeg"
+    }
 }
 //MARK:- BHTextFieldDelegate
 extension ItemListingVC: BHTextFieldManagerDelegate {
@@ -634,6 +653,7 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         if let v1 = gestureRecognizer.view?.tag, let listObj = self.arrFilteredDatasource[v1].dsrCarListModel {
             print(listObj.itemName)
                 print(listObj.itemName)
+                self.popupImage.image = UIImage(named: self.getImageName(productName: "\(listObj.itemName ?? "155195.jpeg")"))
                 self.popupTitle.text = listObj.itemName
                 self.popupDesc.text = listObj.itemPerBagQuantity
                 setView(view: popView, hidden: false)
@@ -682,6 +702,7 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if  let listObj = self.arrFilteredDatasource[indexPath.section].dsrCarListModel {
             print(listObj.itemName)
+            self.popupImage.image = UIImage(named: self.getImageName(productName: "\(listObj.itemName ?? "155195.jpeg")"))
             self.popupTitle.text = listObj.itemName
             self.popupDesc.text = listObj.itemPerBagQuantity
             setView(view: popView, hidden: false)
