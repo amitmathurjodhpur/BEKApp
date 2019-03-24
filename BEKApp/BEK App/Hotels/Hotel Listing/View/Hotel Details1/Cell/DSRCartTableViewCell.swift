@@ -39,6 +39,7 @@ class DSRCartTableViewCell: UITableViewCell {
         self.lblSubtotal.text = "$" + "\(model.itemSubTotal ?? 0.0)"
         self.lblItemMargin.text = "\(model.itemMargin ?? 0.0)" + "%"
         self.txtfldUnitPrice.text = "$" + "\(model.itemUnitPrice ?? 0.0)"
+    
         self.lblItemQuantity.text = "\(model.itemQuantity ?? 0)"
     }
 

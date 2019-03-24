@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05B79B7AEACEB445D2E51491 /* Pods_BEKApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B164242C82DC6A6588A97F /* Pods_BEKApp.framework */; };
+		22542E032247602800E87CEF /* HotelDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22542E022247602800E87CEF /* HotelDetails.swift */; };
 		229D76D62243A13A00361C2B /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 229D76D52243A13A00361C2B /* products.json */; };
 		229D76F72243ABD300361C2B /* 104927.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 229D76D82243ABD000361C2B /* 104927.jpeg */; };
 		229D76F82243ABD300361C2B /* 680085.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 229D76D92243ABD000361C2B /* 680085.jpeg */; };
@@ -195,6 +196,7 @@
 
 /* Begin PBXFileReference section */
 		00B164242C82DC6A6588A97F /* Pods_BEKApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BEKApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22542E022247602800E87CEF /* HotelDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetails.swift; sourceTree = "<group>"; };
 		229D76D52243A13A00361C2B /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		229D76D82243ABD000361C2B /* 104927.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 104927.jpeg; sourceTree = "<group>"; };
 		229D76D92243ABD000361C2B /* 680085.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 680085.jpeg; sourceTree = "<group>"; };
@@ -639,6 +641,7 @@
 				FF67B763222D7F7000B91364 /* CommonUtilitiesClass.swift */,
 				FF67B764222D7F7000B91364 /* NSKeyedArchiverUtility.swift */,
 				FF67B766222D7F7000B91364 /* UserDefaultsManager.swift */,
+				22542E022247602800E87CEF /* HotelDetails.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1222,7 +1225,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BEKApp/Pods-BEKApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BEKApp/Pods-BEKApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${PODS_ROOT}/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -1241,7 +1244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BEKApp/Pods-BEKApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BEKApp/Pods-BEKApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1341,6 +1344,7 @@
 				FF00C1BB223AB83F00847F19 /* SearchProductQuery.swift in Sources */,
 				22F2F31D223BA2730088F0C0 /* keyChainStore.swift in Sources */,
 				FF67B79F222DA44300B91364 /* HotelListTableViewCell.swift in Sources */,
+				22542E032247602800E87CEF /* HotelDetails.swift in Sources */,
 				FFC1D783222EE4A90075F63E /* HotelDetailVC.swift in Sources */,
 				FFC1D77F222EE39E0075F63E /* HotelDetailsTableViewCellHeaderView.swift in Sources */,
 				FFDF0A232231600200AEC19A /* DSRCartTableViewCell.swift in Sources */,

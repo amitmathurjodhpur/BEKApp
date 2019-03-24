@@ -66,4 +66,21 @@ class CommonUtilitiesClass: NSObject {
 //            return true
 //        }
 //    }
+    
+    public func setHotelData() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let userDefaults = UserDefaults.standard
+        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: appDelegate.hotelDetails)
+        userDefaults.set(encodedData, forKey: "hotelData")
+        userDefaults.synchronize()
+    }
+    
+    public func getHotelData() -> Bool {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let data = UserDefaults.standard.object(forKey: "hotelData") as? NSData, let decodedData = NSKeyedUnarchiver.unarchiveObject(with: data as Data) as? HotelListModel {
+            appDelegate.hotelDetails = decodedData
+            return true
+        }
+        return false
+    }
 }

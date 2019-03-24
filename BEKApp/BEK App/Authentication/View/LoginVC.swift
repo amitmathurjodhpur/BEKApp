@@ -42,7 +42,11 @@ class LoginVC: BaseVC {
             self.Authenticate { (success) in
                 print(success)
                 DispatchQueue.main.async {
-                    self.txtfldUsername.text = userId
+                    if userId != "pizzaplanetama@hybris.com" {
+                         self.txtfldUsername.text = UserDefaultsManager.shared.tmpuserName
+                    } else {
+                         self.txtfldUsername.text = UserDefaultsManager.shared.userName
+                    }
                     self.txtfldPassword.text = password
                     self.loginAPICall()
                 }
@@ -166,11 +170,14 @@ extension LoginVC {
     private func loginAPICall() {
         self.showLoadingIndicator()
         var requestDic: [String:Any] = [:]
+        let userName = "pizzaplanetama@hybris.com"
+        let password = "12341234"
         requestDic[APIConstants.Key.kClientId] = "rest_api_client"
         requestDic[APIConstants.Key.kClientSecret] = "secret"
         requestDic[APIConstants.Key.kGrantType] = "password"
-        requestDic[APIConstants.Key.kUsername] = txtfldUsername.text
-        requestDic[APIConstants.Key.kPassword] = txtfldPassword.text
+       
+        requestDic[APIConstants.Key.kUsername] = userName //txtfldUsername.text
+        requestDic[APIConstants.Key.kPassword] = password //txtfldPassword.text
         
         APIHelper.shared.post(request: requestDic, to: HTTPClient().createEndPoint(endPoint: HTTPClient.Authentication.Login.rawValue), withAuth: false) { (responseDic, isError, isNetOn) in
             self.hideLoadingIndicator()
@@ -188,8 +195,9 @@ extension LoginVC {
                             UserDefaultsManager.shared.loginData = loginData
                             UserDefaultsManager.shared.authToken = responseModel?.accessToken ?? ""
                             UserDefaultsManager.shared.isLoggedIn = true
-                            UserDefaultsManager.shared.userName = self.txtfldUsername.text!
-                            UserDefaultsManager.shared.password = self.txtfldPassword.text!
+                            UserDefaultsManager.shared.tmpuserName = self.txtfldUsername.text!
+                            UserDefaultsManager.shared.userName = userName //self.txtfldUsername.text!
+                            UserDefaultsManager.shared.password = password //self.txtfldPassword.text!
                             UserDefaults.standard.synchronize()
                             let nextVC = DashboardVC.instantiate(fromAppStoryboard: .Dashboard)
                             self.navigationController?.pushViewController(nextVC, animated: true)

@@ -31,6 +31,17 @@ class UserDefaultsManager {
             return ""
         }
     }
+    var tmpuserName: String {
+        set {
+            UserDefaults.standard.set(newValue, forKey: "tmpuserName")
+        }
+        get {
+            if let tmpuserName = UserDefaults.standard.string(forKey: "tmpuserName") {
+                return tmpuserName
+            }
+            return ""
+        }
+    }
     var password: String {
         set {
             UserDefaults.standard.set(newValue, forKey: "password")

@@ -38,7 +38,10 @@ class HotelDetailVC: BaseVC {
     @IBOutlet weak var vwCartBadge: UIView!
     @IBOutlet weak var mailIcon: UIImageView!
     @IBOutlet weak var mapIcon: UIImageView!
-    
+     var itemNames: String!
+    var totalPrice: String!
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+  
     private var isClientModeOn: Bool! {
         didSet {
             if self.isClientModeOn {
@@ -59,7 +62,12 @@ class HotelDetailVC: BaseVC {
             }
         }
     }
-    
+    var arrItemListing: [DSRCartItemListDatasourceModel] = []
+    var arrFilteredDatasource: [DSRCartItemListDatasourceModel]! = [] {
+        didSet {
+            self.tblvwHotelOrderSummery.reloadData()
+        }
+    }
     var hotelDetails: HotelListModel!
     
     override func viewDidLoad() {
@@ -108,6 +116,7 @@ class HotelDetailVC: BaseVC {
     }
     
     @IBAction func btnPlaceNewOrderTapped(_ sender: UIButton) {
+        appDelegate.TempArrayOrderHistory.removeAll()
         let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
         nextVC.hotelDetails = self.hotelDetails
         self.navigationController?.pushViewController(nextVC, animated: true)
@@ -131,12 +140,27 @@ class HotelDetailVC: BaseVC {
 //MARK: Private Methods
 extension HotelDetailVC {
     private func setupView() {
+        appDelegate.hotelDetails = self.hotelDetails
+        CommonUtilitiesClass.shared.setHotelData()
         self.isClientModeOn = UserDefaultsManager.shared.isClientModeOn
         self.tblvwHotelOrderSummery.registerCellWithNib(class: HotelDetailsTableViewCell.self)
+        
+       self.getCartDataAndSetDatasource()
+        self.setCartTotalPrice()
         self.lblVCTitle.text = hotelDetails.hotelName
         self.lblLocation.text = hotelDetails.hotelAddress
-        if hotelDetails.hotelPhone != "0" {
+        /*if hotelDetails.hotelPhone != "0" {
             self.lblPrimaryContact.text = hotelDetails.hotelPhone
+        }*/
+        
+        if UserDefaultsManager.shared.tmpuserName == "pizzaplanetama@hybris.com" {
+            self.lblPrimaryContact.text = "Primary Contact: Lesha McAllister"
+        } else if UserDefaultsManager.shared.tmpuserName == "earussel@acme.com" {
+            self.lblPrimaryContact.text = "Primary Contact: Earnie Russel"
+        } else if UserDefaultsManager.shared.tmpuserName == "babradley@acme.com" {
+            self.lblPrimaryContact.text = "Primary Contact: Brad Bradley"
+        } else {
+            self.lblPrimaryContact.text = "Hi, here is how you are doing."
         }
        
         let _ = self.isCartHavingItems()
@@ -151,6 +175,54 @@ extension HotelDetailVC {
         
         self.setupUI()
     }
+    
+    
+    private func getCartDataAndSetDatasource() {
+        let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
+        for dbSource in dbSourceFromDB {
+            
+            
+            self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: dbSource.hotelId, hotelName: dbSource.hotelName, itemId: dbSource.itemId, itemMargin: dbSource.itemMargin, itemName: dbSource.itemName!, itemPerBagQuantity: dbSource.itemPerBagQuantity!, itemProductionCost: dbSource.itemProductionCost, itemQuantity: dbSource.itemQuantity, itemSubTotal: dbSource.itemSubTotal, itemTitle: dbSource.itemTitle, itemUnitPrice: dbSource.itemUnitPrice)))
+        }
+        self.arrFilteredDatasource = self.arrItemListing
+        
+        for item in self.arrItemListing{
+            print(item.dsrCarListModel.itemName)
+            if itemNames != nil {
+                if !itemNames!.isEmpty {
+                    itemNames = itemNames + ", " + item.dsrCarListModel.itemName
+                    
+                   
+                }
+            }
+            else
+            {
+                itemNames = item.dsrCarListModel.itemName
+            }
+           
+           // itemNames.append(item.dsrCarListModel.itemName)
+        }
+       print(itemNames)
+    }
+    
+    
+    private func setCartTotalPrice() {
+        var itemTotal: Double = 0
+        var itemCost: Double = 0
+        for item in self.arrItemListing {
+            if item.dsrCarListModel.itemSubTotal > 0 {
+                itemTotal = (itemTotal + item.dsrCarListModel.itemSubTotal).rounded(toPlaces: 2)
+                itemCost = (itemCost + (item.dsrCarListModel.itemProductionCost * Double(item.dsrCarListModel.itemQuantity ?? Int64(1.0)))).rounded(toPlaces: 2)
+            }
+        }
+        
+         totalPrice = "$" + "\(itemTotal)"
+        print(totalPrice)
+
+       
+       // self.updateUIForCartTotalPrice(total: itemTotal, margin: itemMargin, cost: itemCost)
+    }
+
     
     private func setupUI() {
         self.vwSwitchUserMode.layoutIfNeeded()
@@ -218,7 +290,12 @@ extension HotelDetailVC: UITableViewDelegate, UITableViewDataSource {
             return 2
         }
         else {
-            return 1
+            
+            if self.arrFilteredDatasource.count > 0
+            {
+                return 1
+            }
+            return 0
         }
     }
     
@@ -237,12 +314,27 @@ extension HotelDetailVC: UITableViewDelegate, UITableViewDataSource {
             }
         }
         else {
+            
+            let date = Date()
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MMMM dd, yyyy"
+            var result = formatter.string(from: date)
+            
+            result = result + " - " + totalPrice
+
+             //let listObj = self.arrFilteredDatasource[indexPath.row].dsrCarListModel
             cell.vwSideHighlight.backgroundColor = ColorConstants.themeColor.yellow
-            cell.lblTitle.text = "February 20, 2019 - $3,287.32"
-            cell.lblSubTitle.text = "Olive oil, ground beef, peeled tomatos..."
+            cell.lblTitle.text = result
+            cell.lblSubTitle.text =  itemNames  //listObj?.itemName
         }
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
+        nextVC.hotelDetails = self.hotelDetails
+        appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 extension HotelDetailVC: MFMailComposeViewControllerDelegate {
@@ -275,5 +367,18 @@ extension HotelDetailVC: MFMailComposeViewControllerDelegate {
         }
     }
     
+    
+    
+    
+    
+    
+    
 }
+
+
+
+//    self.setCartTotalPrice()
+//    self.updateDataSourceForDSRMode()
+
+
 

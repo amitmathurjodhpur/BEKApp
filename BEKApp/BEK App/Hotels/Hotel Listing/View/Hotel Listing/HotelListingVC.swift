@@ -196,6 +196,8 @@ extension HotelListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = HotelDetailVC.instantiate(fromAppStoryboard: .Hotels)
         nextVC.hotelDetails = self.arrFilteredDatasource[indexPath.row]
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.hotelDetails = self.arrFilteredDatasource[indexPath.row]
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     // This function will setup custom scrollview for the table

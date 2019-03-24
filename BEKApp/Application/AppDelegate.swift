@@ -11,16 +11,17 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    var TempArrayOrderHistory: [DSRCartItemListDatasourceModel] = []
+    var hotelDetails: HotelListModel!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-         UserDefaultsManager.shared.isLoggedIn = false
+         UserDefaultsManager.shared.isLoggedIn = true
         if UserDefaultsManager.shared.isClientModeOn == nil {
            UserDefaultsManager.shared.isClientModeOn = true
         }
+        
         return true
     }
 

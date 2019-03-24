@@ -35,6 +35,15 @@ class SuccessOrderVC: BaseVC {
                 }
                 i += 1
             }
+            
+            i = 0
+            for vc in navControllers {
+                if type(of: vc) == BEKApp.DashboardVC.self {
+                    self.navigationController?.popToViewController(vc, animated: true)
+                    return
+                }
+                i += 1
+            }
         }
     }
 }

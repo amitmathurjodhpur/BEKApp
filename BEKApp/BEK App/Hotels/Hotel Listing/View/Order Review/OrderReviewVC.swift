@@ -556,7 +556,7 @@ extension OrderReviewVC {
                     //No Error
                     GetMapperModel.shared.getMapper(mapper: FinalizeOrderResponse.self, responseDic, completion: { (responseModel) in
                         if responseModel?.entries != nil {
-                            CoreDataModel.shared.deleteAllCartData()
+                           // CoreDataModel.shared.deleteAllCartData()
                             let nextVC = SuccessOrderVC.instantiate(fromAppStoryboard: .Hotels)
                             self.navigationController?.pushViewController(nextVC, animated: true)
                         }

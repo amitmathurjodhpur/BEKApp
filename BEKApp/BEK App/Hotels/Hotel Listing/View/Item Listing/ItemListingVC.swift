@@ -40,6 +40,13 @@ class ItemListingVC: BaseVC {
      @IBOutlet weak var popupDesc: UILabel!
     
     @IBOutlet weak var lblVCTitle: UILabel!
+    
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+    
+    
+    
     var imageDict: Dictionary<String, String> = [:]
     private var isClientModeOn: Bool! = true {
         didSet {
@@ -72,6 +79,7 @@ class ItemListingVC: BaseVC {
     var arrFilteredDatasource: [DSRCartItemListDatasourceModel]! = [] {
         didSet {
             self.tblvwItemListing.reloadData()
+            self.setCartTotalPrice()
         }
     }
     private var isFiltered: Bool! = false
@@ -80,6 +88,7 @@ class ItemListingVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(appDelegate.TempArrayOrderHistory)
         // Do any additional setup after loading the view.
         self.setupView()
     }
@@ -105,6 +114,14 @@ class ItemListingVC: BaseVC {
         self.bhFramework.delegate = self
         let _ = self.isCartHavingItems()
         self.isClientModeOn = UserDefaultsManager.shared.isClientModeOn
+        
+        
+        
+        
+print(self.arrFilteredDatasource)
+        self.setCartTotalPrice()
+
+
     }
     
     //MARK:- IB Actions
@@ -213,7 +230,7 @@ extension ItemListingVC {
     }
     
     private func setCartItemToDatabase() -> Bool {
-        CoreDataModel.shared.deleteAllCartData(for: .cart)
+    CoreDataModel.shared.deleteAllCartData(for: .cart)
         var isSaved: Bool! = false
         for item in self.arrItemListing {
             if item.dsrCarListModel.itemSubTotal > 0 {
@@ -273,6 +290,32 @@ extension ItemListingVC {
             }
             i += 1
         }
+        
+        if appDelegate.TempArrayOrderHistory.count>0
+        {
+            var j = 0
+            for items in appDelegate.TempArrayOrderHistory
+            {
+                var k = 0
+                
+                for item2 in self.arrItemListing
+                {
+                    if items.dsrCarListModel.itemId == item2.dsrCarListModel.itemId
+                    {
+                        item2.dsrCarListModel.itemQuantity = items.dsrCarListModel.itemQuantity
+                        item2.dsrCarListModel.itemMargin = items.dsrCarListModel.itemMargin
+                         item2.dsrCarListModel.itemSubTotal = items.dsrCarListModel.itemSubTotal
+                        item2.dsrCarListModel.itemProductionCost = items.dsrCarListModel.itemProductionCost
+
+                        self.arrItemListing[k] = item2
+                        
+                    }
+                    k=k+1
+                }
+                j=j+1
+            }
+        }
+        
         self.arrFilteredDatasource = self.arrItemListing
         self.setCartTotalPrice()
         self.updateDataSourceForDSRMode()
@@ -446,7 +489,7 @@ extension ItemListingVC {
                             self.saveProductAPIDataToProductList(responseModel?.products)
                         }
                         else {
-                            let alrt = UIAlertController(title: "BEKApp", message: "\((responseDic["error"] as! Array<[String:Any]>).first?["message"] ?? "Opps Something went wrong please try again.")", preferredStyle: .alert)
+                            let alrt = UIAlertController(title: "BEKApp", message: "\((responseDic["error"] as? Array<[String:Any]>)?.first?["message"] ?? "Opps Something went wrong please try again.")", preferredStyle: .alert)
                             alrt.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                             self.present(alrt, animated: true, completion: nil)
                         }

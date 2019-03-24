@@ -17,14 +17,17 @@ class DashboardVC: BaseVC {
     @IBOutlet weak var endDate: UILabel!
     
     private var arrDashboardItemList: [(itemImage: UIImage, itemName: String)] = []
-
+    var arrItemListing: [DSRCartItemListDatasourceModel] = []
+    var arrFilteredDatasource: [DSRCartItemListDatasourceModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UserDefaultsManager.shared.userName == "pizzaplanetama@hybris.com" {
+         let _ = getHotelData()
+        if UserDefaultsManager.shared.tmpuserName == "pizzaplanetama@hybris.com" {
             welcomeLabel.text = "Hi Lesha McAllister, here is how you are doing."
-        } else if UserDefaultsManager.shared.userName == "earussel@acme.com" {
+        } else if UserDefaultsManager.shared.tmpuserName == "earussel@acme.com" {
             welcomeLabel.text = "Hi Earnie Russel, here is how you are doing."
-        } else if UserDefaultsManager.shared.userName == "babradley@acme.com" {
+        } else if UserDefaultsManager.shared.tmpuserName == "babradley@acme.com" {
             welcomeLabel.text = "Hi Brad Bradley, here is how you are doing."
         } else {
              welcomeLabel.text = "Hi, here is how you are doing."
@@ -33,8 +36,19 @@ class DashboardVC: BaseVC {
         self.setupView()
     }
     
+    public func getHotelData() -> Bool {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let data = UserDefaults.standard.object(forKey: "hotelData") as? NSData, let decodedData = NSKeyedUnarchiver.unarchiveObject(with: data as Data) as? HotelListModel {
+            appDelegate.hotelDetails = decodedData
+            return true
+        }
+        return false
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
+        self.arrFilteredDatasource.removeAll()
         let _ = self.isCartHavingItems()
+        getCartDataAndSetDatasource()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,6 +67,13 @@ class DashboardVC: BaseVC {
         }
     }
     
+    func getCartDataAndSetDatasource() {
+        let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
+        for dbSource in dbSourceFromDB {            
+            self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: dbSource.hotelId, hotelName: dbSource.hotelName, itemId: dbSource.itemId, itemMargin: dbSource.itemMargin, itemName: dbSource.itemName!, itemPerBagQuantity: dbSource.itemPerBagQuantity!, itemProductionCost: dbSource.itemProductionCost, itemQuantity: dbSource.itemQuantity, itemSubTotal: dbSource.itemSubTotal, itemTitle: dbSource.itemTitle, itemUnitPrice: dbSource.itemUnitPrice)))
+        }
+        self.arrFilteredDatasource = self.arrItemListing
+    }
 }
 //MARK:- Private Functions
 extension DashboardVC {
@@ -118,6 +139,17 @@ extension DashboardVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         case 1:
             let nextVC = HotelListingVC.instantiate(fromAppStoryboard: .Hotels)
             self.navigationController?.pushViewController(nextVC, animated: true)
+        case 6:
+             let appDelegate = UIApplication.shared.delegate as! AppDelegate
+             if let hotelObj = appDelegate.hotelDetails {
+                let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
+                nextVC.hotelDetails = hotelObj
+                appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
+                self.navigationController?.pushViewController(nextVC, animated: true)
+             } else {
+                self.showAlertWithMessage(message: "No Open Items")
+            }
+            
         default:
             self.showAlertWithMessage(message: "Coming Soon...")
         }
