@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "c6147983fe27e67e41b6a1974bbc58f2"
+build_time: [1553364298, 838461000]
+inputs:
+  "/Users/mac/Desktop/23March/BEKApp-master/Pods/ReachabilitySwift/Sources/Reachability.swift": [1553130216, 0]

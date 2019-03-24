@@ -1,0 +1,483 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SearchProductProduct"
+provides-nominal:
+- "6BEKApp013SearchProductC0C"
+provides-member:
+- ["6BEKApp013SearchProductC0C", ""]
+provides-dynamic-lookup:
+- "encode"
+depends-top-level:
+- !private "!="
+- !private "<-"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- "Map"
+- "Mappable"
+- "NSCoder"
+- "NSCoding"
+- "NSObject"
+- "SearchProductImage"
+- "SearchProductPrice"
+- "SearchProductPriceRange"
+- "SearchProductProduct"
+- "SearchProductStock"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["12ObjectMapper12BaseMappableP", "SearchProductProduct"]
+- ["12ObjectMapper12BaseMappableP", ""]
+- !private ["12ObjectMapper12BaseMappableP", "code"]
+- !private ["12ObjectMapper12BaseMappableP", "configurable"]
+- !private ["12ObjectMapper12BaseMappableP", "configuratorType"]
+- ["12ObjectMapper12BaseMappableP", "encode"]
+- ["12ObjectMapper12BaseMappableP", "encodeWithCoder"]
+- !private ["12ObjectMapper12BaseMappableP", "firstVariantImage"]
+- !private ["12ObjectMapper12BaseMappableP", "images"]
+- ["12ObjectMapper12BaseMappableP", "init"]
+- !private ["12ObjectMapper12BaseMappableP", "manufacturer"]
+- ["12ObjectMapper12BaseMappableP", "mapping"]
+- !private ["12ObjectMapper12BaseMappableP", "multidimensional"]
+- !private ["12ObjectMapper12BaseMappableP", "name"]
+- !private ["12ObjectMapper12BaseMappableP", "price"]
+- !private ["12ObjectMapper12BaseMappableP", "priceRange"]
+- !private ["12ObjectMapper12BaseMappableP", "stock"]
+- !private ["12ObjectMapper12BaseMappableP", "summary"]
+- !private ["12ObjectMapper12BaseMappableP", "url"]
+- !private ["12ObjectMapper12BaseMappableP", "volumePricesFlag"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "SearchProductProduct"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "code"]
+- !private ["s7CVarArgP", "configurable"]
+- !private ["s7CVarArgP", "configuratorType"]
+- !private ["s7CVarArgP", "decodeObject"]
+- ["s7CVarArgP", "encode"]
+- ["s7CVarArgP", "encodeWithCoder"]
+- !private ["s7CVarArgP", "firstVariantImage"]
+- !private ["s7CVarArgP", "images"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "manufacturer"]
+- ["s7CVarArgP", "mapping"]
+- !private ["s7CVarArgP", "multidimensional"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "price"]
+- !private ["s7CVarArgP", "priceRange"]
+- !private ["s7CVarArgP", "stock"]
+- !private ["s7CVarArgP", "summary"]
+- !private ["s7CVarArgP", "url"]
+- !private ["s7CVarArgP", "volumePricesFlag"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "SearchProductProduct"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "code"]
+- !private ["s28CustomDebugStringConvertibleP", "configurable"]
+- !private ["s28CustomDebugStringConvertibleP", "configuratorType"]
+- !private ["s28CustomDebugStringConvertibleP", "decodeObject"]
+- ["s28CustomDebugStringConvertibleP", "encode"]
+- ["s28CustomDebugStringConvertibleP", "encodeWithCoder"]
+- !private ["s28CustomDebugStringConvertibleP", "firstVariantImage"]
+- !private ["s28CustomDebugStringConvertibleP", "images"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "manufacturer"]
+- ["s28CustomDebugStringConvertibleP", "mapping"]
+- !private ["s28CustomDebugStringConvertibleP", "multidimensional"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "price"]
+- !private ["s28CustomDebugStringConvertibleP", "priceRange"]
+- !private ["s28CustomDebugStringConvertibleP", "stock"]
+- !private ["s28CustomDebugStringConvertibleP", "summary"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s28CustomDebugStringConvertibleP", "volumePricesFlag"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "SearchProductProduct"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "code"]
+- !private ["s23CustomStringConvertibleP", "configurable"]
+- !private ["s23CustomStringConvertibleP", "configuratorType"]
+- !private ["s23CustomStringConvertibleP", "decodeObject"]
+- ["s23CustomStringConvertibleP", "encode"]
+- ["s23CustomStringConvertibleP", "encodeWithCoder"]
+- !private ["s23CustomStringConvertibleP", "firstVariantImage"]
+- !private ["s23CustomStringConvertibleP", "images"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "manufacturer"]
+- ["s23CustomStringConvertibleP", "mapping"]
+- !private ["s23CustomStringConvertibleP", "multidimensional"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "price"]
+- !private ["s23CustomStringConvertibleP", "priceRange"]
+- !private ["s23CustomStringConvertibleP", "stock"]
+- !private ["s23CustomStringConvertibleP", "summary"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- !private ["s23CustomStringConvertibleP", "volumePricesFlag"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "SearchProductProduct"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "code"]
+- !private ["SQ", "configurable"]
+- !private ["SQ", "configuratorType"]
+- !private ["SQ", "decodeObject"]
+- ["SQ", "encode"]
+- ["SQ", "encodeWithCoder"]
+- !private ["SQ", "firstVariantImage"]
+- !private ["SQ", "images"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "manufacturer"]
+- ["SQ", "mapping"]
+- !private ["SQ", "multidimensional"]
+- !private ["SQ", "name"]
+- !private ["SQ", "price"]
+- !private ["SQ", "priceRange"]
+- !private ["SQ", "stock"]
+- !private ["SQ", "summary"]
+- !private ["SQ", "url"]
+- !private ["SQ", "volumePricesFlag"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "SearchProductProduct"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "code"]
+- !private ["SH", "configurable"]
+- !private ["SH", "configuratorType"]
+- !private ["SH", "decodeObject"]
+- ["SH", "encode"]
+- ["SH", "encodeWithCoder"]
+- !private ["SH", "firstVariantImage"]
+- !private ["SH", "images"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "manufacturer"]
+- ["SH", "mapping"]
+- !private ["SH", "multidimensional"]
+- !private ["SH", "name"]
+- !private ["SH", "price"]
+- !private ["SH", "priceRange"]
+- !private ["SH", "stock"]
+- !private ["SH", "summary"]
+- !private ["SH", "url"]
+- !private ["SH", "volumePricesFlag"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["12ObjectMapper3MapC", "subscript"]
+- !private ["12ObjectMapper8MappableP", "SearchProductProduct"]
+- ["12ObjectMapper8MappableP", ""]
+- !private ["12ObjectMapper8MappableP", "code"]
+- !private ["12ObjectMapper8MappableP", "configurable"]
+- !private ["12ObjectMapper8MappableP", "configuratorType"]
+- ["12ObjectMapper8MappableP", "encode"]
+- ["12ObjectMapper8MappableP", "encodeWithCoder"]
+- !private ["12ObjectMapper8MappableP", "firstVariantImage"]
+- !private ["12ObjectMapper8MappableP", "images"]
+- ["12ObjectMapper8MappableP", "init"]
+- !private ["12ObjectMapper8MappableP", "manufacturer"]
+- ["12ObjectMapper8MappableP", "mapping"]
+- !private ["12ObjectMapper8MappableP", "multidimensional"]
+- !private ["12ObjectMapper8MappableP", "name"]
+- !private ["12ObjectMapper8MappableP", "price"]
+- !private ["12ObjectMapper8MappableP", "priceRange"]
+- !private ["12ObjectMapper8MappableP", "stock"]
+- !private ["12ObjectMapper8MappableP", "summary"]
+- !private ["12ObjectMapper8MappableP", "url"]
+- !private ["12ObjectMapper8MappableP", "volumePricesFlag"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So7NSCoderC", "decodeObject"]
+- !private ["So7NSCoderC", "encode"]
+- !private ["So8NSCodingP", "SearchProductProduct"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "code"]
+- !private ["So8NSCodingP", "configurable"]
+- !private ["So8NSCodingP", "configuratorType"]
+- ["So8NSCodingP", "encode"]
+- ["So8NSCodingP", "encodeWithCoder"]
+- !private ["So8NSCodingP", "firstVariantImage"]
+- !private ["So8NSCodingP", "images"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "manufacturer"]
+- ["So8NSCodingP", "mapping"]
+- !private ["So8NSCodingP", "multidimensional"]
+- !private ["So8NSCodingP", "name"]
+- !private ["So8NSCodingP", "price"]
+- !private ["So8NSCodingP", "priceRange"]
+- !private ["So8NSCodingP", "stock"]
+- !private ["So8NSCodingP", "summary"]
+- !private ["So8NSCodingP", "url"]
+- !private ["So8NSCodingP", "volumePricesFlag"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Map"]
+- ["So8NSObjectC", "Mappable"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "SearchProductImage"]
+- ["So8NSObjectC", "SearchProductPrice"]
+- ["So8NSObjectC", "SearchProductPriceRange"]
+- !private ["So8NSObjectC", "SearchProductProduct"]
+- ["So8NSObjectC", "SearchProductStock"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "code"]
+- ["So8NSObjectC", "configurable"]
+- ["So8NSObjectC", "configuratorType"]
+- !private ["So8NSObjectC", "decodeObject"]
+- ["So8NSObjectC", "encode"]
+- ["So8NSObjectC", "encodeWithCoder"]
+- ["So8NSObjectC", "firstVariantImage"]
+- ["So8NSObjectC", "images"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "manufacturer"]
+- ["So8NSObjectC", "mapping"]
+- ["So8NSObjectC", "multidimensional"]
+- ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "newInstance"]
+- ["So8NSObjectC", "price"]
+- ["So8NSObjectC", "priceRange"]
+- ["So8NSObjectC", "stock"]
+- ["So8NSObjectC", "summary"]
+- ["So8NSObjectC", "url"]
+- ["So8NSObjectC", "volumePricesFlag"]
+- !private ["So8NSObjectP", "SearchProductProduct"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "code"]
+- !private ["So8NSObjectP", "configurable"]
+- !private ["So8NSObjectP", "configuratorType"]
+- !private ["So8NSObjectP", "decodeObject"]
+- ["So8NSObjectP", "encode"]
+- ["So8NSObjectP", "encodeWithCoder"]
+- !private ["So8NSObjectP", "firstVariantImage"]
+- !private ["So8NSObjectP", "images"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "manufacturer"]
+- ["So8NSObjectP", "mapping"]
+- !private ["So8NSObjectP", "multidimensional"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "price"]
+- !private ["So8NSObjectP", "priceRange"]
+- !private ["So8NSObjectP", "stock"]
+- !private ["So8NSObjectP", "summary"]
+- !private ["So8NSObjectP", "url"]
+- !private ["So8NSObjectP", "volumePricesFlag"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["6BEKApp18SearchProductImageC", "deinit"]
+- !private ["6BEKApp18SearchProductPriceC", "deinit"]
+- !private ["6BEKApp23SearchProductPriceRangeC", "deinit"]
+- ["6BEKApp013SearchProductC0C", "Bool"]
+- ["6BEKApp013SearchProductC0C", "Map"]
+- ["6BEKApp013SearchProductC0C", "Mappable"]
+- ["6BEKApp013SearchProductC0C", "NSCoder"]
+- ["6BEKApp013SearchProductC0C", "SearchProductImage"]
+- ["6BEKApp013SearchProductC0C", "SearchProductPrice"]
+- ["6BEKApp013SearchProductC0C", "SearchProductPriceRange"]
+- !private ["6BEKApp013SearchProductC0C", "SearchProductProduct"]
+- ["6BEKApp013SearchProductC0C", "SearchProductStock"]
+- ["6BEKApp013SearchProductC0C", "String"]
+- ["6BEKApp013SearchProductC0C", "code"]
+- ["6BEKApp013SearchProductC0C", "configurable"]
+- ["6BEKApp013SearchProductC0C", "configuratorType"]
+- ["6BEKApp013SearchProductC0C", "deinit"]
+- ["6BEKApp013SearchProductC0C", "encode"]
+- ["6BEKApp013SearchProductC0C", "encodeWithCoder"]
+- ["6BEKApp013SearchProductC0C", "firstVariantImage"]
+- ["6BEKApp013SearchProductC0C", "images"]
+- ["6BEKApp013SearchProductC0C", "init"]
+- ["6BEKApp013SearchProductC0C", "manufacturer"]
+- ["6BEKApp013SearchProductC0C", "mapping"]
+- ["6BEKApp013SearchProductC0C", "multidimensional"]
+- ["6BEKApp013SearchProductC0C", "name"]
+- ["6BEKApp013SearchProductC0C", "newInstance"]
+- ["6BEKApp013SearchProductC0C", "price"]
+- ["6BEKApp013SearchProductC0C", "priceRange"]
+- ["6BEKApp013SearchProductC0C", "stock"]
+- ["6BEKApp013SearchProductC0C", "summary"]
+- ["6BEKApp013SearchProductC0C", "url"]
+- ["6BEKApp013SearchProductC0C", "volumePricesFlag"]
+- !private ["6BEKApp18SearchProductStockC", "deinit"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SearchProductProduct"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "code"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configurable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configuratorType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "decodeObject"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encodeWithCoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstVariantImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "images"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "manufacturer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "mapping"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "multidimensional"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "price"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "priceRange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "summary"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "volumePricesFlag"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "12ObjectMapper12BaseMappableP"
+- !private "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "12ObjectMapper3MapC"
+- "12ObjectMapper8MappableP"
+- !private "s10MirrorPathP"
+- !private "So7NSCoderC"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sm"
+- !private "6BEKApp18SearchProductImageC"
+- !private "6BEKApp18SearchProductPriceC"
+- !private "6BEKApp23SearchProductPriceRangeC"
+- "6BEKApp013SearchProductC0C"
+- !private "6BEKApp18SearchProductStockC"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager+Accesory.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d9abad9538a8bccf1f7edee3a8611287"

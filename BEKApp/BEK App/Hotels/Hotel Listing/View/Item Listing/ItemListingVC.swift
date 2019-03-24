@@ -698,7 +698,7 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
                 print(listObj.itemName)
                 self.popupImage.image = UIImage(named: self.getImageName(productName: "\(listObj.itemName ?? "155195.jpeg")"))
                 self.popupTitle.text = listObj.itemName
-                self.popupDesc.text = listObj.itemPerBagQuantity
+            self.popupDesc.text = "Golden Harvest cream cheese is a fresh, natural cheese that can be used as a spread or dip, as well as in sweet or savory dishes. Smooth and creamy, its primary ingredient is cream rather than milk. A starter culture is added to the milk and cream. This process causes it to ferment and creates cream cheese’s unique texture and flavor.\n \nA holiday staple to keep in your kitchen, make sure you have plenty on hand!" //listObj.itemPerBagQuantity
                 setView(view: popView, hidden: false)
         }
     }
@@ -747,7 +747,7 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
             print(listObj.itemName)
             self.popupImage.image = UIImage(named: self.getImageName(productName: "\(listObj.itemName ?? "155195.jpeg")"))
             self.popupTitle.text = listObj.itemName
-            self.popupDesc.text = listObj.itemPerBagQuantity
+            self.popupDesc.text = "Golden Harvest cream cheese is a fresh, natural cheese that can be used as a spread or dip, as well as in sweet or savory dishes. Smooth and creamy, its primary ingredient is cream rather than milk. A starter culture is added to the milk and cream. This process causes it to ferment and creates cream cheese’s unique texture and flavor.\n \nA holiday staple to keep in your kitchen, make sure you have plenty on hand!" //listObj.itemPerBagQuantity
             setView(view: popView, hidden: false)
         }
     }

@@ -1,0 +1,464 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SetCustomerPaymentTypeResponse"
+provides-nominal:
+- "6BEKApp30SetCustomerPaymentTypeResponseC"
+provides-member:
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", ""]
+provides-dynamic-lookup:
+- "encode"
+depends-top-level:
+- !private "!="
+- !private "<-"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "Int"
+- "Map"
+- "Mappable"
+- "NSCoder"
+- "NSCoding"
+- "NSObject"
+- "SetCustomerPaymentTypeEntry"
+- "SetCustomerPaymentTypePaymentType"
+- "SetCustomerPaymentTypeResponse"
+- "SetCustomerPaymentTypeSubTotal"
+- "SetCustomerPaymentTypeTotalDiscount"
+- "SetCustomerPaymentTypeTotalPrice"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["12ObjectMapper12BaseMappableP", "SetCustomerPaymentTypeResponse"]
+- ["12ObjectMapper12BaseMappableP", ""]
+- !private ["12ObjectMapper12BaseMappableP", "code"]
+- ["12ObjectMapper12BaseMappableP", "encode"]
+- ["12ObjectMapper12BaseMappableP", "encodeWithCoder"]
+- !private ["12ObjectMapper12BaseMappableP", "entries"]
+- !private ["12ObjectMapper12BaseMappableP", "guid"]
+- ["12ObjectMapper12BaseMappableP", "init"]
+- ["12ObjectMapper12BaseMappableP", "mapping"]
+- !private ["12ObjectMapper12BaseMappableP", "paymentType"]
+- !private ["12ObjectMapper12BaseMappableP", "subTotal"]
+- !private ["12ObjectMapper12BaseMappableP", "totalDiscounts"]
+- !private ["12ObjectMapper12BaseMappableP", "totalItems"]
+- !private ["12ObjectMapper12BaseMappableP", "totalPrice"]
+- !private ["12ObjectMapper12BaseMappableP", "totalPriceWithTax"]
+- !private ["12ObjectMapper12BaseMappableP", "totalTax"]
+- !private ["12ObjectMapper12BaseMappableP", "totalUnitCount"]
+- !private ["12ObjectMapper12BaseMappableP", "type"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "SetCustomerPaymentTypeResponse"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "code"]
+- !private ["s7CVarArgP", "decodeObject"]
+- ["s7CVarArgP", "encode"]
+- ["s7CVarArgP", "encodeWithCoder"]
+- !private ["s7CVarArgP", "entries"]
+- !private ["s7CVarArgP", "guid"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "mapping"]
+- !private ["s7CVarArgP", "paymentType"]
+- !private ["s7CVarArgP", "subTotal"]
+- !private ["s7CVarArgP", "totalDiscounts"]
+- !private ["s7CVarArgP", "totalItems"]
+- !private ["s7CVarArgP", "totalPrice"]
+- !private ["s7CVarArgP", "totalPriceWithTax"]
+- !private ["s7CVarArgP", "totalTax"]
+- !private ["s7CVarArgP", "totalUnitCount"]
+- !private ["s7CVarArgP", "type"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "SetCustomerPaymentTypeResponse"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "code"]
+- !private ["s28CustomDebugStringConvertibleP", "decodeObject"]
+- ["s28CustomDebugStringConvertibleP", "encode"]
+- ["s28CustomDebugStringConvertibleP", "encodeWithCoder"]
+- !private ["s28CustomDebugStringConvertibleP", "entries"]
+- !private ["s28CustomDebugStringConvertibleP", "guid"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "mapping"]
+- !private ["s28CustomDebugStringConvertibleP", "paymentType"]
+- !private ["s28CustomDebugStringConvertibleP", "subTotal"]
+- !private ["s28CustomDebugStringConvertibleP", "totalDiscounts"]
+- !private ["s28CustomDebugStringConvertibleP", "totalItems"]
+- !private ["s28CustomDebugStringConvertibleP", "totalPrice"]
+- !private ["s28CustomDebugStringConvertibleP", "totalPriceWithTax"]
+- !private ["s28CustomDebugStringConvertibleP", "totalTax"]
+- !private ["s28CustomDebugStringConvertibleP", "totalUnitCount"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "SetCustomerPaymentTypeResponse"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "code"]
+- !private ["s23CustomStringConvertibleP", "decodeObject"]
+- ["s23CustomStringConvertibleP", "encode"]
+- ["s23CustomStringConvertibleP", "encodeWithCoder"]
+- !private ["s23CustomStringConvertibleP", "entries"]
+- !private ["s23CustomStringConvertibleP", "guid"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "mapping"]
+- !private ["s23CustomStringConvertibleP", "paymentType"]
+- !private ["s23CustomStringConvertibleP", "subTotal"]
+- !private ["s23CustomStringConvertibleP", "totalDiscounts"]
+- !private ["s23CustomStringConvertibleP", "totalItems"]
+- !private ["s23CustomStringConvertibleP", "totalPrice"]
+- !private ["s23CustomStringConvertibleP", "totalPriceWithTax"]
+- !private ["s23CustomStringConvertibleP", "totalTax"]
+- !private ["s23CustomStringConvertibleP", "totalUnitCount"]
+- !private ["s23CustomStringConvertibleP", "type"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "SetCustomerPaymentTypeResponse"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "code"]
+- !private ["SQ", "decodeObject"]
+- ["SQ", "encode"]
+- ["SQ", "encodeWithCoder"]
+- !private ["SQ", "entries"]
+- !private ["SQ", "guid"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "mapping"]
+- !private ["SQ", "paymentType"]
+- !private ["SQ", "subTotal"]
+- !private ["SQ", "totalDiscounts"]
+- !private ["SQ", "totalItems"]
+- !private ["SQ", "totalPrice"]
+- !private ["SQ", "totalPriceWithTax"]
+- !private ["SQ", "totalTax"]
+- !private ["SQ", "totalUnitCount"]
+- !private ["SQ", "type"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "SetCustomerPaymentTypeResponse"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "code"]
+- !private ["SH", "decodeObject"]
+- ["SH", "encode"]
+- ["SH", "encodeWithCoder"]
+- !private ["SH", "entries"]
+- !private ["SH", "guid"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "mapping"]
+- !private ["SH", "paymentType"]
+- !private ["SH", "subTotal"]
+- !private ["SH", "totalDiscounts"]
+- !private ["SH", "totalItems"]
+- !private ["SH", "totalPrice"]
+- !private ["SH", "totalPriceWithTax"]
+- !private ["SH", "totalTax"]
+- !private ["SH", "totalUnitCount"]
+- !private ["SH", "type"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["12ObjectMapper3MapC", "subscript"]
+- !private ["12ObjectMapper8MappableP", "SetCustomerPaymentTypeResponse"]
+- ["12ObjectMapper8MappableP", ""]
+- !private ["12ObjectMapper8MappableP", "code"]
+- ["12ObjectMapper8MappableP", "encode"]
+- ["12ObjectMapper8MappableP", "encodeWithCoder"]
+- !private ["12ObjectMapper8MappableP", "entries"]
+- !private ["12ObjectMapper8MappableP", "guid"]
+- ["12ObjectMapper8MappableP", "init"]
+- ["12ObjectMapper8MappableP", "mapping"]
+- !private ["12ObjectMapper8MappableP", "paymentType"]
+- !private ["12ObjectMapper8MappableP", "subTotal"]
+- !private ["12ObjectMapper8MappableP", "totalDiscounts"]
+- !private ["12ObjectMapper8MappableP", "totalItems"]
+- !private ["12ObjectMapper8MappableP", "totalPrice"]
+- !private ["12ObjectMapper8MappableP", "totalPriceWithTax"]
+- !private ["12ObjectMapper8MappableP", "totalTax"]
+- !private ["12ObjectMapper8MappableP", "totalUnitCount"]
+- !private ["12ObjectMapper8MappableP", "type"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So7NSCoderC", "decodeObject"]
+- !private ["So7NSCoderC", "encode"]
+- !private ["So8NSCodingP", "SetCustomerPaymentTypeResponse"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "code"]
+- ["So8NSCodingP", "encode"]
+- ["So8NSCodingP", "encodeWithCoder"]
+- !private ["So8NSCodingP", "entries"]
+- !private ["So8NSCodingP", "guid"]
+- ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "mapping"]
+- !private ["So8NSCodingP", "paymentType"]
+- !private ["So8NSCodingP", "subTotal"]
+- !private ["So8NSCodingP", "totalDiscounts"]
+- !private ["So8NSCodingP", "totalItems"]
+- !private ["So8NSCodingP", "totalPrice"]
+- !private ["So8NSCodingP", "totalPriceWithTax"]
+- !private ["So8NSCodingP", "totalTax"]
+- !private ["So8NSCodingP", "totalUnitCount"]
+- !private ["So8NSCodingP", "type"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "Map"]
+- ["So8NSObjectC", "Mappable"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "SetCustomerPaymentTypeEntry"]
+- ["So8NSObjectC", "SetCustomerPaymentTypePaymentType"]
+- !private ["So8NSObjectC", "SetCustomerPaymentTypeResponse"]
+- ["So8NSObjectC", "SetCustomerPaymentTypeSubTotal"]
+- ["So8NSObjectC", "SetCustomerPaymentTypeTotalDiscount"]
+- ["So8NSObjectC", "SetCustomerPaymentTypeTotalPrice"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "code"]
+- !private ["So8NSObjectC", "decodeObject"]
+- ["So8NSObjectC", "encode"]
+- ["So8NSObjectC", "encodeWithCoder"]
+- ["So8NSObjectC", "entries"]
+- ["So8NSObjectC", "guid"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mapping"]
+- ["So8NSObjectC", "newInstance"]
+- ["So8NSObjectC", "paymentType"]
+- ["So8NSObjectC", "subTotal"]
+- ["So8NSObjectC", "totalDiscounts"]
+- ["So8NSObjectC", "totalItems"]
+- ["So8NSObjectC", "totalPrice"]
+- ["So8NSObjectC", "totalPriceWithTax"]
+- ["So8NSObjectC", "totalTax"]
+- ["So8NSObjectC", "totalUnitCount"]
+- ["So8NSObjectC", "type"]
+- !private ["So8NSObjectP", "SetCustomerPaymentTypeResponse"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "code"]
+- !private ["So8NSObjectP", "decodeObject"]
+- ["So8NSObjectP", "encode"]
+- ["So8NSObjectP", "encodeWithCoder"]
+- !private ["So8NSObjectP", "entries"]
+- !private ["So8NSObjectP", "guid"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "mapping"]
+- !private ["So8NSObjectP", "paymentType"]
+- !private ["So8NSObjectP", "subTotal"]
+- !private ["So8NSObjectP", "totalDiscounts"]
+- !private ["So8NSObjectP", "totalItems"]
+- !private ["So8NSObjectP", "totalPrice"]
+- !private ["So8NSObjectP", "totalPriceWithTax"]
+- !private ["So8NSObjectP", "totalTax"]
+- !private ["So8NSObjectP", "totalUnitCount"]
+- !private ["So8NSObjectP", "type"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["6BEKApp27SetCustomerPaymentTypeEntryC", "deinit"]
+- !private ["6BEKApp022SetCustomerPaymentTypedE0C", "deinit"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "Int"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "Map"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "Mappable"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "NSCoder"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "SetCustomerPaymentTypeEntry"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "SetCustomerPaymentTypePaymentType"]
+- !private ["6BEKApp30SetCustomerPaymentTypeResponseC", "SetCustomerPaymentTypeResponse"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "SetCustomerPaymentTypeSubTotal"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "SetCustomerPaymentTypeTotalDiscount"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "SetCustomerPaymentTypeTotalPrice"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "String"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "code"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "deinit"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "encode"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "encodeWithCoder"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "entries"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "guid"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "init"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "mapping"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "newInstance"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "paymentType"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "subTotal"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "totalDiscounts"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "totalItems"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "totalPrice"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "totalPriceWithTax"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "totalTax"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "totalUnitCount"]
+- ["6BEKApp30SetCustomerPaymentTypeResponseC", "type"]
+- !private ["6BEKApp30SetCustomerPaymentTypeSubTotalC", "deinit"]
+- !private ["6BEKApp35SetCustomerPaymentTypeTotalDiscountC", "deinit"]
+- !private ["6BEKApp32SetCustomerPaymentTypeTotalPriceC", "deinit"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SetCustomerPaymentTypeResponse"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "code"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "decodeObject"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encodeWithCoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "entries"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "guid"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "mapping"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "paymentType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subTotal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalDiscounts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalItems"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalPrice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalPriceWithTax"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalTax"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalUnitCount"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "12ObjectMapper12BaseMappableP"
+- !private "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "12ObjectMapper3MapC"
+- "12ObjectMapper8MappableP"
+- !private "s10MirrorPathP"
+- !private "So7NSCoderC"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sm"
+- !private "ST"
+- !private "6BEKApp27SetCustomerPaymentTypeEntryC"
+- !private "6BEKApp022SetCustomerPaymentTypedE0C"
+- "6BEKApp30SetCustomerPaymentTypeResponseC"
+- !private "6BEKApp30SetCustomerPaymentTypeSubTotalC"
+- !private "6BEKApp35SetCustomerPaymentTypeTotalDiscountC"
+- !private "6BEKApp32SetCustomerPaymentTypeTotalPriceC"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager+Accesory.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d616d054877dda23dbcced60530c76a4"

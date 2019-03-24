@@ -1,0 +1,732 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FinalizeOrderResponse"
+provides-nominal:
+- "6BEKApp21FinalizeOrderResponseC"
+provides-member:
+- ["6BEKApp21FinalizeOrderResponseC", ""]
+provides-dynamic-lookup:
+- "encode"
+depends-top-level:
+- !private "!="
+- !private "<-"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- "FinalizeOrderDeliveryAddres"
+- "FinalizeOrderDeliveryCost"
+- "FinalizeOrderDeliveryMode"
+- "FinalizeOrderDeliveryOrderGroup"
+- "FinalizeOrderEntry"
+- "FinalizeOrderOrderDiscount"
+- "FinalizeOrderResponse"
+- "FinalizeOrderUser"
+- "Int"
+- "Map"
+- "Mappable"
+- "NSCoder"
+- "NSCoding"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["12ObjectMapper12BaseMappableP", "FinalizeOrderResponse"]
+- ["12ObjectMapper12BaseMappableP", ""]
+- !private ["12ObjectMapper12BaseMappableP", "appliedOrderPromotions"]
+- !private ["12ObjectMapper12BaseMappableP", "appliedProductPromotions"]
+- !private ["12ObjectMapper12BaseMappableP", "appliedVouchers"]
+- !private ["12ObjectMapper12BaseMappableP", "calculated"]
+- !private ["12ObjectMapper12BaseMappableP", "code"]
+- !private ["12ObjectMapper12BaseMappableP", "consignments"]
+- !private ["12ObjectMapper12BaseMappableP", "created"]
+- !private ["12ObjectMapper12BaseMappableP", "deliveryAddress"]
+- !private ["12ObjectMapper12BaseMappableP", "deliveryCost"]
+- !private ["12ObjectMapper12BaseMappableP", "deliveryItemsQuantity"]
+- !private ["12ObjectMapper12BaseMappableP", "deliveryMode"]
+- !private ["12ObjectMapper12BaseMappableP", "deliveryOrderGroups"]
+- ["12ObjectMapper12BaseMappableP", "encode"]
+- ["12ObjectMapper12BaseMappableP", "encodeWithCoder"]
+- !private ["12ObjectMapper12BaseMappableP", "entries"]
+- !private ["12ObjectMapper12BaseMappableP", "guestCustomer"]
+- !private ["12ObjectMapper12BaseMappableP", "guid"]
+- ["12ObjectMapper12BaseMappableP", "init"]
+- ["12ObjectMapper12BaseMappableP", "mapping"]
+- !private ["12ObjectMapper12BaseMappableP", "net"]
+- !private ["12ObjectMapper12BaseMappableP", "orderDiscounts"]
+- !private ["12ObjectMapper12BaseMappableP", "pickupItemsQuantity"]
+- !private ["12ObjectMapper12BaseMappableP", "pickupOrderGroups"]
+- !private ["12ObjectMapper12BaseMappableP", "productDiscounts"]
+- !private ["12ObjectMapper12BaseMappableP", "site"]
+- !private ["12ObjectMapper12BaseMappableP", "status"]
+- !private ["12ObjectMapper12BaseMappableP", "statusDisplay"]
+- !private ["12ObjectMapper12BaseMappableP", "store"]
+- !private ["12ObjectMapper12BaseMappableP", "subTotal"]
+- !private ["12ObjectMapper12BaseMappableP", "totalDiscounts"]
+- !private ["12ObjectMapper12BaseMappableP", "totalItems"]
+- !private ["12ObjectMapper12BaseMappableP", "totalPrice"]
+- !private ["12ObjectMapper12BaseMappableP", "totalPriceWithTax"]
+- !private ["12ObjectMapper12BaseMappableP", "totalTax"]
+- !private ["12ObjectMapper12BaseMappableP", "type"]
+- !private ["12ObjectMapper12BaseMappableP", "unconsignedEntries"]
+- !private ["12ObjectMapper12BaseMappableP", "user"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "FinalizeOrderResponse"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "appliedOrderPromotions"]
+- !private ["s7CVarArgP", "appliedProductPromotions"]
+- !private ["s7CVarArgP", "appliedVouchers"]
+- !private ["s7CVarArgP", "calculated"]
+- !private ["s7CVarArgP", "code"]
+- !private ["s7CVarArgP", "consignments"]
+- !private ["s7CVarArgP", "created"]
+- !private ["s7CVarArgP", "decodeObject"]
+- !private ["s7CVarArgP", "deliveryAddress"]
+- !private ["s7CVarArgP", "deliveryCost"]
+- !private ["s7CVarArgP", "deliveryItemsQuantity"]
+- !private ["s7CVarArgP", "deliveryMode"]
+- !private ["s7CVarArgP", "deliveryOrderGroups"]
+- ["s7CVarArgP", "encode"]
+- ["s7CVarArgP", "encodeWithCoder"]
+- !private ["s7CVarArgP", "entries"]
+- !private ["s7CVarArgP", "guestCustomer"]
+- !private ["s7CVarArgP", "guid"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "mapping"]
+- !private ["s7CVarArgP", "net"]
+- !private ["s7CVarArgP", "orderDiscounts"]
+- !private ["s7CVarArgP", "pickupItemsQuantity"]
+- !private ["s7CVarArgP", "pickupOrderGroups"]
+- !private ["s7CVarArgP", "productDiscounts"]
+- !private ["s7CVarArgP", "site"]
+- !private ["s7CVarArgP", "status"]
+- !private ["s7CVarArgP", "statusDisplay"]
+- !private ["s7CVarArgP", "store"]
+- !private ["s7CVarArgP", "subTotal"]
+- !private ["s7CVarArgP", "totalDiscounts"]
+- !private ["s7CVarArgP", "totalItems"]
+- !private ["s7CVarArgP", "totalPrice"]
+- !private ["s7CVarArgP", "totalPriceWithTax"]
+- !private ["s7CVarArgP", "totalTax"]
+- !private ["s7CVarArgP", "type"]
+- !private ["s7CVarArgP", "unconsignedEntries"]
+- !private ["s7CVarArgP", "user"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "FinalizeOrderResponse"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "appliedOrderPromotions"]
+- !private ["s28CustomDebugStringConvertibleP", "appliedProductPromotions"]
+- !private ["s28CustomDebugStringConvertibleP", "appliedVouchers"]
+- !private ["s28CustomDebugStringConvertibleP", "calculated"]
+- !private ["s28CustomDebugStringConvertibleP", "code"]
+- !private ["s28CustomDebugStringConvertibleP", "consignments"]
+- !private ["s28CustomDebugStringConvertibleP", "created"]
+- !private ["s28CustomDebugStringConvertibleP", "decodeObject"]
+- !private ["s28CustomDebugStringConvertibleP", "deliveryAddress"]
+- !private ["s28CustomDebugStringConvertibleP", "deliveryCost"]
+- !private ["s28CustomDebugStringConvertibleP", "deliveryItemsQuantity"]
+- !private ["s28CustomDebugStringConvertibleP", "deliveryMode"]
+- !private ["s28CustomDebugStringConvertibleP", "deliveryOrderGroups"]
+- ["s28CustomDebugStringConvertibleP", "encode"]
+- ["s28CustomDebugStringConvertibleP", "encodeWithCoder"]
+- !private ["s28CustomDebugStringConvertibleP", "entries"]
+- !private ["s28CustomDebugStringConvertibleP", "guestCustomer"]
+- !private ["s28CustomDebugStringConvertibleP", "guid"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "mapping"]
+- !private ["s28CustomDebugStringConvertibleP", "net"]
+- !private ["s28CustomDebugStringConvertibleP", "orderDiscounts"]
+- !private ["s28CustomDebugStringConvertibleP", "pickupItemsQuantity"]
+- !private ["s28CustomDebugStringConvertibleP", "pickupOrderGroups"]
+- !private ["s28CustomDebugStringConvertibleP", "productDiscounts"]
+- !private ["s28CustomDebugStringConvertibleP", "site"]
+- !private ["s28CustomDebugStringConvertibleP", "status"]
+- !private ["s28CustomDebugStringConvertibleP", "statusDisplay"]
+- !private ["s28CustomDebugStringConvertibleP", "store"]
+- !private ["s28CustomDebugStringConvertibleP", "subTotal"]
+- !private ["s28CustomDebugStringConvertibleP", "totalDiscounts"]
+- !private ["s28CustomDebugStringConvertibleP", "totalItems"]
+- !private ["s28CustomDebugStringConvertibleP", "totalPrice"]
+- !private ["s28CustomDebugStringConvertibleP", "totalPriceWithTax"]
+- !private ["s28CustomDebugStringConvertibleP", "totalTax"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
+- !private ["s28CustomDebugStringConvertibleP", "unconsignedEntries"]
+- !private ["s28CustomDebugStringConvertibleP", "user"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "FinalizeOrderResponse"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "appliedOrderPromotions"]
+- !private ["s23CustomStringConvertibleP", "appliedProductPromotions"]
+- !private ["s23CustomStringConvertibleP", "appliedVouchers"]
+- !private ["s23CustomStringConvertibleP", "calculated"]
+- !private ["s23CustomStringConvertibleP", "code"]
+- !private ["s23CustomStringConvertibleP", "consignments"]
+- !private ["s23CustomStringConvertibleP", "created"]
+- !private ["s23CustomStringConvertibleP", "decodeObject"]
+- !private ["s23CustomStringConvertibleP", "deliveryAddress"]
+- !private ["s23CustomStringConvertibleP", "deliveryCost"]
+- !private ["s23CustomStringConvertibleP", "deliveryItemsQuantity"]
+- !private ["s23CustomStringConvertibleP", "deliveryMode"]
+- !private ["s23CustomStringConvertibleP", "deliveryOrderGroups"]
+- ["s23CustomStringConvertibleP", "encode"]
+- ["s23CustomStringConvertibleP", "encodeWithCoder"]
+- !private ["s23CustomStringConvertibleP", "entries"]
+- !private ["s23CustomStringConvertibleP", "guestCustomer"]
+- !private ["s23CustomStringConvertibleP", "guid"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "mapping"]
+- !private ["s23CustomStringConvertibleP", "net"]
+- !private ["s23CustomStringConvertibleP", "orderDiscounts"]
+- !private ["s23CustomStringConvertibleP", "pickupItemsQuantity"]
+- !private ["s23CustomStringConvertibleP", "pickupOrderGroups"]
+- !private ["s23CustomStringConvertibleP", "productDiscounts"]
+- !private ["s23CustomStringConvertibleP", "site"]
+- !private ["s23CustomStringConvertibleP", "status"]
+- !private ["s23CustomStringConvertibleP", "statusDisplay"]
+- !private ["s23CustomStringConvertibleP", "store"]
+- !private ["s23CustomStringConvertibleP", "subTotal"]
+- !private ["s23CustomStringConvertibleP", "totalDiscounts"]
+- !private ["s23CustomStringConvertibleP", "totalItems"]
+- !private ["s23CustomStringConvertibleP", "totalPrice"]
+- !private ["s23CustomStringConvertibleP", "totalPriceWithTax"]
+- !private ["s23CustomStringConvertibleP", "totalTax"]
+- !private ["s23CustomStringConvertibleP", "type"]
+- !private ["s23CustomStringConvertibleP", "unconsignedEntries"]
+- !private ["s23CustomStringConvertibleP", "user"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "FinalizeOrderResponse"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "appliedOrderPromotions"]
+- !private ["SQ", "appliedProductPromotions"]
+- !private ["SQ", "appliedVouchers"]
+- !private ["SQ", "calculated"]
+- !private ["SQ", "code"]
+- !private ["SQ", "consignments"]
+- !private ["SQ", "created"]
+- !private ["SQ", "decodeObject"]
+- !private ["SQ", "deliveryAddress"]
+- !private ["SQ", "deliveryCost"]
+- !private ["SQ", "deliveryItemsQuantity"]
+- !private ["SQ", "deliveryMode"]
+- !private ["SQ", "deliveryOrderGroups"]
+- ["SQ", "encode"]
+- ["SQ", "encodeWithCoder"]
+- !private ["SQ", "entries"]
+- !private ["SQ", "guestCustomer"]
+- !private ["SQ", "guid"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "mapping"]
+- !private ["SQ", "net"]
+- !private ["SQ", "orderDiscounts"]
+- !private ["SQ", "pickupItemsQuantity"]
+- !private ["SQ", "pickupOrderGroups"]
+- !private ["SQ", "productDiscounts"]
+- !private ["SQ", "site"]
+- !private ["SQ", "status"]
+- !private ["SQ", "statusDisplay"]
+- !private ["SQ", "store"]
+- !private ["SQ", "subTotal"]
+- !private ["SQ", "totalDiscounts"]
+- !private ["SQ", "totalItems"]
+- !private ["SQ", "totalPrice"]
+- !private ["SQ", "totalPriceWithTax"]
+- !private ["SQ", "totalTax"]
+- !private ["SQ", "type"]
+- !private ["SQ", "unconsignedEntries"]
+- !private ["SQ", "user"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["6BEKApp27FinalizeOrderDeliveryAddresC", "deinit"]
+- !private ["6BEKApp25FinalizeOrderDeliveryCostC", "deinit"]
+- !private ["6BEKApp25FinalizeOrderDeliveryModeC", "deinit"]
+- !private ["6BEKApp021FinalizeOrderDeliveryC5GroupC", "deinit"]
+- !private ["6BEKApp18FinalizeOrderEntryC", "deinit"]
+- !private ["6BEKApp013FinalizeOrderC8DiscountC", "deinit"]
+- ["6BEKApp21FinalizeOrderResponseC", "AnyObject"]
+- ["6BEKApp21FinalizeOrderResponseC", "Bool"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderDeliveryAddres"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderDeliveryCost"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderDeliveryMode"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderDeliveryOrderGroup"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderEntry"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderOrderDiscount"]
+- !private ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderResponse"]
+- ["6BEKApp21FinalizeOrderResponseC", "FinalizeOrderUser"]
+- ["6BEKApp21FinalizeOrderResponseC", "Int"]
+- ["6BEKApp21FinalizeOrderResponseC", "Map"]
+- ["6BEKApp21FinalizeOrderResponseC", "Mappable"]
+- ["6BEKApp21FinalizeOrderResponseC", "NSCoder"]
+- ["6BEKApp21FinalizeOrderResponseC", "String"]
+- ["6BEKApp21FinalizeOrderResponseC", "appliedOrderPromotions"]
+- ["6BEKApp21FinalizeOrderResponseC", "appliedProductPromotions"]
+- ["6BEKApp21FinalizeOrderResponseC", "appliedVouchers"]
+- ["6BEKApp21FinalizeOrderResponseC", "calculated"]
+- ["6BEKApp21FinalizeOrderResponseC", "code"]
+- ["6BEKApp21FinalizeOrderResponseC", "consignments"]
+- ["6BEKApp21FinalizeOrderResponseC", "created"]
+- ["6BEKApp21FinalizeOrderResponseC", "deinit"]
+- ["6BEKApp21FinalizeOrderResponseC", "deliveryAddress"]
+- ["6BEKApp21FinalizeOrderResponseC", "deliveryCost"]
+- ["6BEKApp21FinalizeOrderResponseC", "deliveryItemsQuantity"]
+- ["6BEKApp21FinalizeOrderResponseC", "deliveryMode"]
+- ["6BEKApp21FinalizeOrderResponseC", "deliveryOrderGroups"]
+- ["6BEKApp21FinalizeOrderResponseC", "encode"]
+- ["6BEKApp21FinalizeOrderResponseC", "encodeWithCoder"]
+- ["6BEKApp21FinalizeOrderResponseC", "entries"]
+- ["6BEKApp21FinalizeOrderResponseC", "guestCustomer"]
+- ["6BEKApp21FinalizeOrderResponseC", "guid"]
+- ["6BEKApp21FinalizeOrderResponseC", "init"]
+- ["6BEKApp21FinalizeOrderResponseC", "mapping"]
+- ["6BEKApp21FinalizeOrderResponseC", "net"]
+- ["6BEKApp21FinalizeOrderResponseC", "newInstance"]
+- ["6BEKApp21FinalizeOrderResponseC", "orderDiscounts"]
+- ["6BEKApp21FinalizeOrderResponseC", "pickupItemsQuantity"]
+- ["6BEKApp21FinalizeOrderResponseC", "pickupOrderGroups"]
+- ["6BEKApp21FinalizeOrderResponseC", "productDiscounts"]
+- ["6BEKApp21FinalizeOrderResponseC", "site"]
+- ["6BEKApp21FinalizeOrderResponseC", "status"]
+- ["6BEKApp21FinalizeOrderResponseC", "statusDisplay"]
+- ["6BEKApp21FinalizeOrderResponseC", "store"]
+- ["6BEKApp21FinalizeOrderResponseC", "subTotal"]
+- ["6BEKApp21FinalizeOrderResponseC", "totalDiscounts"]
+- ["6BEKApp21FinalizeOrderResponseC", "totalItems"]
+- ["6BEKApp21FinalizeOrderResponseC", "totalPrice"]
+- ["6BEKApp21FinalizeOrderResponseC", "totalPriceWithTax"]
+- ["6BEKApp21FinalizeOrderResponseC", "totalTax"]
+- ["6BEKApp21FinalizeOrderResponseC", "type"]
+- ["6BEKApp21FinalizeOrderResponseC", "unconsignedEntries"]
+- ["6BEKApp21FinalizeOrderResponseC", "user"]
+- !private ["6BEKApp17FinalizeOrderUserC", "deinit"]
+- !private ["SH", "FinalizeOrderResponse"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "appliedOrderPromotions"]
+- !private ["SH", "appliedProductPromotions"]
+- !private ["SH", "appliedVouchers"]
+- !private ["SH", "calculated"]
+- !private ["SH", "code"]
+- !private ["SH", "consignments"]
+- !private ["SH", "created"]
+- !private ["SH", "decodeObject"]
+- !private ["SH", "deliveryAddress"]
+- !private ["SH", "deliveryCost"]
+- !private ["SH", "deliveryItemsQuantity"]
+- !private ["SH", "deliveryMode"]
+- !private ["SH", "deliveryOrderGroups"]
+- ["SH", "encode"]
+- ["SH", "encodeWithCoder"]
+- !private ["SH", "entries"]
+- !private ["SH", "guestCustomer"]
+- !private ["SH", "guid"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "mapping"]
+- !private ["SH", "net"]
+- !private ["SH", "orderDiscounts"]
+- !private ["SH", "pickupItemsQuantity"]
+- !private ["SH", "pickupOrderGroups"]
+- !private ["SH", "productDiscounts"]
+- !private ["SH", "site"]
+- !private ["SH", "status"]
+- !private ["SH", "statusDisplay"]
+- !private ["SH", "store"]
+- !private ["SH", "subTotal"]
+- !private ["SH", "totalDiscounts"]
+- !private ["SH", "totalItems"]
+- !private ["SH", "totalPrice"]
+- !private ["SH", "totalPriceWithTax"]
+- !private ["SH", "totalTax"]
+- !private ["SH", "type"]
+- !private ["SH", "unconsignedEntries"]
+- !private ["SH", "user"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["12ObjectMapper3MapC", "subscript"]
+- !private ["12ObjectMapper8MappableP", "FinalizeOrderResponse"]
+- ["12ObjectMapper8MappableP", ""]
+- !private ["12ObjectMapper8MappableP", "appliedOrderPromotions"]
+- !private ["12ObjectMapper8MappableP", "appliedProductPromotions"]
+- !private ["12ObjectMapper8MappableP", "appliedVouchers"]
+- !private ["12ObjectMapper8MappableP", "calculated"]
+- !private ["12ObjectMapper8MappableP", "code"]
+- !private ["12ObjectMapper8MappableP", "consignments"]
+- !private ["12ObjectMapper8MappableP", "created"]
+- !private ["12ObjectMapper8MappableP", "deliveryAddress"]
+- !private ["12ObjectMapper8MappableP", "deliveryCost"]
+- !private ["12ObjectMapper8MappableP", "deliveryItemsQuantity"]
+- !private ["12ObjectMapper8MappableP", "deliveryMode"]
+- !private ["12ObjectMapper8MappableP", "deliveryOrderGroups"]
+- ["12ObjectMapper8MappableP", "encode"]
+- ["12ObjectMapper8MappableP", "encodeWithCoder"]
+- !private ["12ObjectMapper8MappableP", "entries"]
+- !private ["12ObjectMapper8MappableP", "guestCustomer"]
+- !private ["12ObjectMapper8MappableP", "guid"]
+- ["12ObjectMapper8MappableP", "init"]
+- ["12ObjectMapper8MappableP", "mapping"]
+- !private ["12ObjectMapper8MappableP", "net"]
+- !private ["12ObjectMapper8MappableP", "orderDiscounts"]
+- !private ["12ObjectMapper8MappableP", "pickupItemsQuantity"]
+- !private ["12ObjectMapper8MappableP", "pickupOrderGroups"]
+- !private ["12ObjectMapper8MappableP", "productDiscounts"]
+- !private ["12ObjectMapper8MappableP", "site"]
+- !private ["12ObjectMapper8MappableP", "status"]
+- !private ["12ObjectMapper8MappableP", "statusDisplay"]
+- !private ["12ObjectMapper8MappableP", "store"]
+- !private ["12ObjectMapper8MappableP", "subTotal"]
+- !private ["12ObjectMapper8MappableP", "totalDiscounts"]
+- !private ["12ObjectMapper8MappableP", "totalItems"]
+- !private ["12ObjectMapper8MappableP", "totalPrice"]
+- !private ["12ObjectMapper8MappableP", "totalPriceWithTax"]
+- !private ["12ObjectMapper8MappableP", "totalTax"]
+- !private ["12ObjectMapper8MappableP", "type"]
+- !private ["12ObjectMapper8MappableP", "unconsignedEntries"]
+- !private ["12ObjectMapper8MappableP", "user"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So7NSCoderC", "decodeObject"]
+- !private ["So7NSCoderC", "encode"]
+- !private ["So8NSCodingP", "FinalizeOrderResponse"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "appliedOrderPromotions"]
+- !private ["So8NSCodingP", "appliedProductPromotions"]
+- !private ["So8NSCodingP", "appliedVouchers"]
+- !private ["So8NSCodingP", "calculated"]
+- !private ["So8NSCodingP", "code"]
+- !private ["So8NSCodingP", "consignments"]
+- !private ["So8NSCodingP", "created"]
+- !private ["So8NSCodingP", "deliveryAddress"]
+- !private ["So8NSCodingP", "deliveryCost"]
+- !private ["So8NSCodingP", "deliveryItemsQuantity"]
+- !private ["So8NSCodingP", "deliveryMode"]
+- !private ["So8NSCodingP", "deliveryOrderGroups"]
+- ["So8NSCodingP", "encode"]
+- ["So8NSCodingP", "encodeWithCoder"]
+- !private ["So8NSCodingP", "entries"]
+- !private ["So8NSCodingP", "guestCustomer"]
+- !private ["So8NSCodingP", "guid"]
+- ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "mapping"]
+- !private ["So8NSCodingP", "net"]
+- !private ["So8NSCodingP", "orderDiscounts"]
+- !private ["So8NSCodingP", "pickupItemsQuantity"]
+- !private ["So8NSCodingP", "pickupOrderGroups"]
+- !private ["So8NSCodingP", "productDiscounts"]
+- !private ["So8NSCodingP", "site"]
+- !private ["So8NSCodingP", "status"]
+- !private ["So8NSCodingP", "statusDisplay"]
+- !private ["So8NSCodingP", "store"]
+- !private ["So8NSCodingP", "subTotal"]
+- !private ["So8NSCodingP", "totalDiscounts"]
+- !private ["So8NSCodingP", "totalItems"]
+- !private ["So8NSCodingP", "totalPrice"]
+- !private ["So8NSCodingP", "totalPriceWithTax"]
+- !private ["So8NSCodingP", "totalTax"]
+- !private ["So8NSCodingP", "type"]
+- !private ["So8NSCodingP", "unconsignedEntries"]
+- !private ["So8NSCodingP", "user"]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "FinalizeOrderDeliveryAddres"]
+- ["So8NSObjectC", "FinalizeOrderDeliveryCost"]
+- ["So8NSObjectC", "FinalizeOrderDeliveryMode"]
+- ["So8NSObjectC", "FinalizeOrderDeliveryOrderGroup"]
+- ["So8NSObjectC", "FinalizeOrderEntry"]
+- ["So8NSObjectC", "FinalizeOrderOrderDiscount"]
+- !private ["So8NSObjectC", "FinalizeOrderResponse"]
+- ["So8NSObjectC", "FinalizeOrderUser"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "Map"]
+- ["So8NSObjectC", "Mappable"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "appliedOrderPromotions"]
+- ["So8NSObjectC", "appliedProductPromotions"]
+- ["So8NSObjectC", "appliedVouchers"]
+- ["So8NSObjectC", "calculated"]
+- ["So8NSObjectC", "code"]
+- ["So8NSObjectC", "consignments"]
+- ["So8NSObjectC", "created"]
+- !private ["So8NSObjectC", "decodeObject"]
+- ["So8NSObjectC", "deliveryAddress"]
+- ["So8NSObjectC", "deliveryCost"]
+- ["So8NSObjectC", "deliveryItemsQuantity"]
+- ["So8NSObjectC", "deliveryMode"]
+- ["So8NSObjectC", "deliveryOrderGroups"]
+- ["So8NSObjectC", "encode"]
+- ["So8NSObjectC", "encodeWithCoder"]
+- ["So8NSObjectC", "entries"]
+- ["So8NSObjectC", "guestCustomer"]
+- ["So8NSObjectC", "guid"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mapping"]
+- ["So8NSObjectC", "net"]
+- ["So8NSObjectC", "newInstance"]
+- ["So8NSObjectC", "orderDiscounts"]
+- ["So8NSObjectC", "pickupItemsQuantity"]
+- ["So8NSObjectC", "pickupOrderGroups"]
+- ["So8NSObjectC", "productDiscounts"]
+- ["So8NSObjectC", "site"]
+- ["So8NSObjectC", "status"]
+- ["So8NSObjectC", "statusDisplay"]
+- ["So8NSObjectC", "store"]
+- ["So8NSObjectC", "subTotal"]
+- ["So8NSObjectC", "totalDiscounts"]
+- ["So8NSObjectC", "totalItems"]
+- ["So8NSObjectC", "totalPrice"]
+- ["So8NSObjectC", "totalPriceWithTax"]
+- ["So8NSObjectC", "totalTax"]
+- ["So8NSObjectC", "type"]
+- ["So8NSObjectC", "unconsignedEntries"]
+- ["So8NSObjectC", "user"]
+- !private ["So8NSObjectP", "FinalizeOrderResponse"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "appliedOrderPromotions"]
+- !private ["So8NSObjectP", "appliedProductPromotions"]
+- !private ["So8NSObjectP", "appliedVouchers"]
+- !private ["So8NSObjectP", "calculated"]
+- !private ["So8NSObjectP", "code"]
+- !private ["So8NSObjectP", "consignments"]
+- !private ["So8NSObjectP", "created"]
+- !private ["So8NSObjectP", "decodeObject"]
+- !private ["So8NSObjectP", "deliveryAddress"]
+- !private ["So8NSObjectP", "deliveryCost"]
+- !private ["So8NSObjectP", "deliveryItemsQuantity"]
+- !private ["So8NSObjectP", "deliveryMode"]
+- !private ["So8NSObjectP", "deliveryOrderGroups"]
+- ["So8NSObjectP", "encode"]
+- ["So8NSObjectP", "encodeWithCoder"]
+- !private ["So8NSObjectP", "entries"]
+- !private ["So8NSObjectP", "guestCustomer"]
+- !private ["So8NSObjectP", "guid"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "mapping"]
+- !private ["So8NSObjectP", "net"]
+- !private ["So8NSObjectP", "orderDiscounts"]
+- !private ["So8NSObjectP", "pickupItemsQuantity"]
+- !private ["So8NSObjectP", "pickupOrderGroups"]
+- !private ["So8NSObjectP", "productDiscounts"]
+- !private ["So8NSObjectP", "site"]
+- !private ["So8NSObjectP", "status"]
+- !private ["So8NSObjectP", "statusDisplay"]
+- !private ["So8NSObjectP", "store"]
+- !private ["So8NSObjectP", "subTotal"]
+- !private ["So8NSObjectP", "totalDiscounts"]
+- !private ["So8NSObjectP", "totalItems"]
+- !private ["So8NSObjectP", "totalPrice"]
+- !private ["So8NSObjectP", "totalPriceWithTax"]
+- !private ["So8NSObjectP", "totalTax"]
+- !private ["So8NSObjectP", "type"]
+- !private ["So8NSObjectP", "unconsignedEntries"]
+- !private ["So8NSObjectP", "user"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FinalizeOrderResponse"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appliedOrderPromotions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appliedProductPromotions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appliedVouchers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "calculated"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "code"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "consignments"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "created"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "decodeObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryAddress"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryCost"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryItemsQuantity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryOrderGroups"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encodeWithCoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "entries"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "guestCustomer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "guid"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "mapping"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "net"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "orderDiscounts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pickupItemsQuantity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pickupOrderGroups"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "productDiscounts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "site"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "status"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusDisplay"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "store"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subTotal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalDiscounts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalItems"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalPrice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalPriceWithTax"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalTax"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unconsignedEntries"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "12ObjectMapper12BaseMappableP"
+- !private "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "6BEKApp27FinalizeOrderDeliveryAddresC"
+- !private "6BEKApp25FinalizeOrderDeliveryCostC"
+- !private "6BEKApp25FinalizeOrderDeliveryModeC"
+- !private "6BEKApp021FinalizeOrderDeliveryC5GroupC"
+- !private "6BEKApp18FinalizeOrderEntryC"
+- !private "6BEKApp013FinalizeOrderC8DiscountC"
+- "6BEKApp21FinalizeOrderResponseC"
+- !private "6BEKApp17FinalizeOrderUserC"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "12ObjectMapper3MapC"
+- "12ObjectMapper8MappableP"
+- !private "s10MirrorPathP"
+- !private "So7NSCoderC"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager+Accesory.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f93f58357daf650178a4b0ce19232879"

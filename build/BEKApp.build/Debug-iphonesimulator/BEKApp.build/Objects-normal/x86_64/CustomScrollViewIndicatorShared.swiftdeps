@@ -1,0 +1,396 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomScrollViewIndicatorShared"
+provides-nominal:
+- "6BEKApp31CustomScrollViewIndicatorSharedC"
+provides-member:
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "ColorConstants"
+- "CustomScrollIndicatorView"
+- "CustomScrollViewIndicatorShared"
+- !private "FloatLiteralType"
+- "NSObject"
+- "StringLiteralType"
+- "UINib"
+depends-member:
+- ["Sa", "first"]
+- ["s13ArrayProtocolP", "first"]
+- ["SK", "first"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["So15CALayerDelegateP", "borderColorForBackgroundView"]
+- !private ["So15CALayerDelegateP", "borderWidthForBackgroundView"]
+- !private ["So15CALayerDelegateP", "indicatorColor"]
+- !private ["s7CVarArgP", "ColorConstants"]
+- ["s7CVarArgP", "CustomScrollViewIndicatorShared"]
+- ["s7CVarArgP", "UINib"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "borderColorForBackgroundView"]
+- !private ["s7CVarArgP", "borderWidthForBackgroundView"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "customScrollIndicatorView"]
+- ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "indicatorColor"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "instantiate"]
+- ["Sl", "first"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["6BEKApp14ColorConstantsC", "themeColor"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "ColorConstants"]
+- ["s28CustomDebugStringConvertibleP", "CustomScrollViewIndicatorShared"]
+- ["s28CustomDebugStringConvertibleP", "UINib"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "borderColorForBackgroundView"]
+- !private ["s28CustomDebugStringConvertibleP", "borderWidthForBackgroundView"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "customScrollIndicatorView"]
+- ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "indicatorColor"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "instantiate"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "first"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["6BEKApp25CustomScrollIndicatorViewC", "borderColorForBackgroundView"]
+- !private ["6BEKApp25CustomScrollIndicatorViewC", "borderWidthForBackgroundView"]
+- !private ["6BEKApp25CustomScrollIndicatorViewC", "indicatorColor"]
+- !private ["6BEKApp31CustomScrollViewIndicatorSharedC", "ColorConstants"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "CustomScrollIndicatorView"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "CustomScrollViewIndicatorShared"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "UINib"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "customScrollIndicatorView"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "init"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "setupThemeIndicator"]
+- ["6BEKApp31CustomScrollViewIndicatorSharedC", "shared"]
+- !private ["s23CustomStringConvertibleP", "ColorConstants"]
+- ["s23CustomStringConvertibleP", "CustomScrollViewIndicatorShared"]
+- ["s23CustomStringConvertibleP", "UINib"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "borderColorForBackgroundView"]
+- !private ["s23CustomStringConvertibleP", "borderWidthForBackgroundView"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "customScrollIndicatorView"]
+- ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "indicatorColor"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "instantiate"]
+- ["Se", "first"]
+- ["Se", "init"]
+- ["Se", "init"]
+- ["SE", "first"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SQ", "ColorConstants"]
+- ["SQ", "CustomScrollViewIndicatorShared"]
+- ["SQ", "UINib"]
+- ["SQ", ""]
+- !private ["SQ", "borderColorForBackgroundView"]
+- !private ["SQ", "borderWidthForBackgroundView"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "customScrollIndicatorView"]
+- ["SQ", "first"]
+- !private ["SQ", "indicatorColor"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- ["SQ", "instantiate"]
+- ["s25ExpressibleByArrayLiteralP", "first"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "ColorConstants"]
+- ["SH", "CustomScrollViewIndicatorShared"]
+- ["SH", "UINib"]
+- ["SH", ""]
+- !private ["SH", "borderColorForBackgroundView"]
+- !private ["SH", "borderWidthForBackgroundView"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "customScrollIndicatorView"]
+- ["SH", "first"]
+- !private ["SH", "indicatorColor"]
+- ["SH", "init"]
+- ["SH", "init"]
+- ["SH", "instantiate"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["SM", "first"]
+- !private ["So8NSCodingP", "borderColorForBackgroundView"]
+- !private ["So8NSCodingP", "borderWidthForBackgroundView"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "indicatorColor"]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- !private ["So8NSObjectC", "ColorConstants"]
+- ["So8NSObjectC", "CustomScrollIndicatorView"]
+- ["So8NSObjectC", "CustomScrollViewIndicatorShared"]
+- ["So8NSObjectC", "UINib"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "borderColorForBackgroundView"]
+- !private ["So8NSObjectC", "borderWidthForBackgroundView"]
+- !private ["So8NSObjectC", "cgColor"]
+- ["So8NSObjectC", "customScrollIndicatorView"]
+- !private ["So8NSObjectC", "indicatorColor"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "instantiate"]
+- ["So8NSObjectC", "setupThemeIndicator"]
+- ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectP", "ColorConstants"]
+- ["So8NSObjectP", "CustomScrollViewIndicatorShared"]
+- ["So8NSObjectP", "UINib"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "borderColorForBackgroundView"]
+- !private ["So8NSObjectP", "borderWidthForBackgroundView"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "customScrollIndicatorView"]
+- !private ["So8NSObjectP", "indicatorColor"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "instantiate"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- ["Sk", "first"]
+- ["Sm", "first"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["ST", "first"]
+- ["ST", "init"]
+- ["ST", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "borderColorForBackgroundView"]
+- !private ["So29UIAccessibilityIdentificationP", "borderWidthForBackgroundView"]
+- !private ["So29UIAccessibilityIdentificationP", "indicatorColor"]
+- !private ["So12UIAppearanceP", "borderColorForBackgroundView"]
+- !private ["So12UIAppearanceP", "borderWidthForBackgroundView"]
+- !private ["So12UIAppearanceP", "indicatorColor"]
+- !private ["So21UIAppearanceContainerP", "borderColorForBackgroundView"]
+- !private ["So21UIAppearanceContainerP", "borderWidthForBackgroundView"]
+- !private ["So21UIAppearanceContainerP", "indicatorColor"]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So17UICoordinateSpaceP", "borderColorForBackgroundView"]
+- !private ["So17UICoordinateSpaceP", "borderWidthForBackgroundView"]
+- !private ["So17UICoordinateSpaceP", "indicatorColor"]
+- !private ["So13UIDynamicItemP", "borderColorForBackgroundView"]
+- !private ["So13UIDynamicItemP", "borderWidthForBackgroundView"]
+- !private ["So13UIDynamicItemP", "indicatorColor"]
+- !private ["So18UIFocusEnvironmentP", "borderColorForBackgroundView"]
+- !private ["So18UIFocusEnvironmentP", "borderWidthForBackgroundView"]
+- !private ["So18UIFocusEnvironmentP", "indicatorColor"]
+- !private ["So11UIFocusItemP", "borderColorForBackgroundView"]
+- !private ["So11UIFocusItemP", "borderWidthForBackgroundView"]
+- !private ["So11UIFocusItemP", "indicatorColor"]
+- !private ["So20UIFocusItemContainerP", "borderColorForBackgroundView"]
+- !private ["So20UIFocusItemContainerP", "borderWidthForBackgroundView"]
+- !private ["So20UIFocusItemContainerP", "indicatorColor"]
+- ["So5UINibC", "init"]
+- ["So5UINibC", "instantiate"]
+- !private ["So30UIPasteConfigurationSupportingP", "borderColorForBackgroundView"]
+- !private ["So30UIPasteConfigurationSupportingP", "borderWidthForBackgroundView"]
+- !private ["So30UIPasteConfigurationSupportingP", "indicatorColor"]
+- !private ["So11UIResponderC", "borderColorForBackgroundView"]
+- !private ["So11UIResponderC", "borderWidthForBackgroundView"]
+- !private ["So11UIResponderC", "indicatorColor"]
+- !private ["So30UIResponderStandardEditActionsP", "borderColorForBackgroundView"]
+- !private ["So30UIResponderStandardEditActionsP", "borderWidthForBackgroundView"]
+- !private ["So30UIResponderStandardEditActionsP", "indicatorColor"]
+- !private ["So18UITraitEnvironmentP", "borderColorForBackgroundView"]
+- !private ["So18UITraitEnvironmentP", "borderWidthForBackgroundView"]
+- !private ["So18UITraitEnvironmentP", "indicatorColor"]
+- !private ["So23UIUserActivityRestoringP", "borderColorForBackgroundView"]
+- !private ["So23UIUserActivityRestoringP", "borderWidthForBackgroundView"]
+- !private ["So23UIUserActivityRestoringP", "indicatorColor"]
+- !private ["So6UIViewC", "borderColorForBackgroundView"]
+- !private ["So6UIViewC", "borderWidthForBackgroundView"]
+- !private ["So6UIViewC", "indicatorColor"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "borderColorForBackgroundView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "borderWidthForBackgroundView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "indicatorColor"]
+- ["s24_DestructorSafeContainerP", "first"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ColorConstants"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "CustomScrollViewIndicatorShared"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UINib"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColorForBackgroundView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidthForBackgroundView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "customScrollIndicatorView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "indicatorColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "instantiate"]
+- ["s21_ObjectiveCBridgeableP", "first"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["6BEKApp14ColorConstantsC05themeB0V", "blue"]
+- !private ["6BEKApp14ColorConstantsC05themeB0V", "lightGray"]
+depends-nominal:
+- "Sa"
+- "s13ArrayProtocolP"
+- "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "Sl"
+- !private "6BEKApp14ColorConstantsC"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- !private "6BEKApp25CustomScrollIndicatorViewC"
+- "6BEKApp31CustomScrollViewIndicatorSharedC"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "SM"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- "Sk"
+- "Sm"
+- "ST"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- "So5UINibC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "9Alamofire14URLConvertibleP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+- !private "6BEKApp14ColorConstantsC05themeB0V"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager+Accesory.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7f02b128456d130bfd801b850e7176ed"

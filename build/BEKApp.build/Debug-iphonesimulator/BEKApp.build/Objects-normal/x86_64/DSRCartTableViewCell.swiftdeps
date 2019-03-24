@@ -1,0 +1,861 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DSRCartTableViewCell"
+provides-nominal:
+- "6BEKApp20DSRCartTableViewCellC"
+provides-member:
+- ["6BEKApp20DSRCartTableViewCellC", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "btnAddMargin"
+- "btnAddUnit"
+- "btnRemoveMargin"
+- "btnRemoveUnit"
+- "lblItemMargin"
+- "lblItemQuantity"
+- "lblProductionCost"
+- "lblSubtotal"
+- "setSelected"
+- "txtfldUnitPrice"
+- "vwSaperator"
+- "vwUnitPrice"
+depends-top-level:
+- !private "+"
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "ColorConstants"
+- "DSRCartItemListModel"
+- "DSRCartTableViewCell"
+- !private "FloatLiteralType"
+- !private "StringLiteralType"
+- "UIButton"
+- "UILabel"
+- "UITableViewCell"
+- "UITextField"
+- "UIView"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["So7CALayerC", "borderColor"]
+- !private ["So7CALayerC", "borderWidth"]
+- !private ["So15CALayerDelegateP", "ColorConstants"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "lblItemMargin"]
+- !private ["So15CALayerDelegateP", "lblItemQuantity"]
+- !private ["So15CALayerDelegateP", "lblProductionCost"]
+- !private ["So15CALayerDelegateP", "lblSubtotal"]
+- !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So15CALayerDelegateP", "setupUI"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "txtfldUnitPrice"]
+- !private ["So15CALayerDelegateP", "vwSaperator"]
+- !private ["So15CALayerDelegateP", "vwUnitPrice"]
+- !private ["So13CAMediaTimingP", "borderColor"]
+- !private ["So13CAMediaTimingP", "borderWidth"]
+- !private ["s7CVarArgP", "ColorConstants"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "borderColor"]
+- !private ["s7CVarArgP", "borderWidth"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "itemMargin"]
+- !private ["s7CVarArgP", "itemProductionCost"]
+- !private ["s7CVarArgP", "itemQuantity"]
+- !private ["s7CVarArgP", "itemSubTotal"]
+- !private ["s7CVarArgP", "itemUnitPrice"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "lblItemMargin"]
+- !private ["s7CVarArgP", "lblItemQuantity"]
+- !private ["s7CVarArgP", "lblProductionCost"]
+- !private ["s7CVarArgP", "lblSubtotal"]
+- !private ["s7CVarArgP", "setSelected"]
+- !private ["s7CVarArgP", "setupUI"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "txtfldUnitPrice"]
+- !private ["s7CVarArgP", "vwSaperator"]
+- !private ["s7CVarArgP", "vwUnitPrice"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["6BEKApp14ColorConstantsC", "borderColor"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "ColorConstants"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "borderColor"]
+- !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "itemMargin"]
+- !private ["s28CustomDebugStringConvertibleP", "itemProductionCost"]
+- !private ["s28CustomDebugStringConvertibleP", "itemQuantity"]
+- !private ["s28CustomDebugStringConvertibleP", "itemSubTotal"]
+- !private ["s28CustomDebugStringConvertibleP", "itemUnitPrice"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "lblItemMargin"]
+- !private ["s28CustomDebugStringConvertibleP", "lblItemQuantity"]
+- !private ["s28CustomDebugStringConvertibleP", "lblProductionCost"]
+- !private ["s28CustomDebugStringConvertibleP", "lblSubtotal"]
+- !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "setupUI"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "txtfldUnitPrice"]
+- !private ["s28CustomDebugStringConvertibleP", "vwSaperator"]
+- !private ["s28CustomDebugStringConvertibleP", "vwUnitPrice"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "layer"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "ColorConstants"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "borderColor"]
+- !private ["s23CustomStringConvertibleP", "borderWidth"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "itemMargin"]
+- !private ["s23CustomStringConvertibleP", "itemProductionCost"]
+- !private ["s23CustomStringConvertibleP", "itemQuantity"]
+- !private ["s23CustomStringConvertibleP", "itemSubTotal"]
+- !private ["s23CustomStringConvertibleP", "itemUnitPrice"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "lblItemMargin"]
+- !private ["s23CustomStringConvertibleP", "lblItemQuantity"]
+- !private ["s23CustomStringConvertibleP", "lblProductionCost"]
+- !private ["s23CustomStringConvertibleP", "lblSubtotal"]
+- !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["s23CustomStringConvertibleP", "setupUI"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "txtfldUnitPrice"]
+- !private ["s23CustomStringConvertibleP", "vwSaperator"]
+- !private ["s23CustomStringConvertibleP", "vwUnitPrice"]
+- !private ["6BEKApp20DSRCartItemListModelC", "itemMargin"]
+- !private ["6BEKApp20DSRCartItemListModelC", "itemProductionCost"]
+- !private ["6BEKApp20DSRCartItemListModelC", "itemQuantity"]
+- !private ["6BEKApp20DSRCartItemListModelC", "itemSubTotal"]
+- !private ["6BEKApp20DSRCartItemListModelC", "itemUnitPrice"]
+- ["6BEKApp20DSRCartTableViewCellC", "Bool"]
+- !private ["6BEKApp20DSRCartTableViewCellC", "ColorConstants"]
+- ["6BEKApp20DSRCartTableViewCellC", "DSRCartItemListModel"]
+- ["6BEKApp20DSRCartTableViewCellC", "UIButton"]
+- ["6BEKApp20DSRCartTableViewCellC", "UILabel"]
+- ["6BEKApp20DSRCartTableViewCellC", "UITextField"]
+- ["6BEKApp20DSRCartTableViewCellC", "UIView"]
+- ["6BEKApp20DSRCartTableViewCellC", "awakeFromNib"]
+- ["6BEKApp20DSRCartTableViewCellC", "btnAddMargin"]
+- ["6BEKApp20DSRCartTableViewCellC", "btnAddUnit"]
+- ["6BEKApp20DSRCartTableViewCellC", "btnRemoveMargin"]
+- ["6BEKApp20DSRCartTableViewCellC", "btnRemoveUnit"]
+- ["6BEKApp20DSRCartTableViewCellC", "init"]
+- ["6BEKApp20DSRCartTableViewCellC", "lblItemMargin"]
+- ["6BEKApp20DSRCartTableViewCellC", "lblItemQuantity"]
+- ["6BEKApp20DSRCartTableViewCellC", "lblProductionCost"]
+- ["6BEKApp20DSRCartTableViewCellC", "lblSubtotal"]
+- ["6BEKApp20DSRCartTableViewCellC", "setSelected"]
+- ["6BEKApp20DSRCartTableViewCellC", "setupCell"]
+- !private ["6BEKApp20DSRCartTableViewCellC", "setupUI"]
+- ["6BEKApp20DSRCartTableViewCellC", "txtfldUnitPrice"]
+- ["6BEKApp20DSRCartTableViewCellC", "vwSaperator"]
+- ["6BEKApp20DSRCartTableViewCellC", "vwUnitPrice"]
+- !private ["Se", "backgroundColor"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "layer"]
+- !private ["Se", "text"]
+- !private ["SE", "backgroundColor"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "layer"]
+- !private ["SE", "text"]
+- !private ["SQ", "ColorConstants"]
+- ["SQ", ""]
+- !private ["SQ", "awakeFromNib"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "borderColor"]
+- !private ["SQ", "borderWidth"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "itemMargin"]
+- !private ["SQ", "itemProductionCost"]
+- !private ["SQ", "itemQuantity"]
+- !private ["SQ", "itemSubTotal"]
+- !private ["SQ", "itemUnitPrice"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "lblItemMargin"]
+- !private ["SQ", "lblItemQuantity"]
+- !private ["SQ", "lblProductionCost"]
+- !private ["SQ", "lblSubtotal"]
+- !private ["SQ", "setSelected"]
+- !private ["SQ", "setupUI"]
+- !private ["SQ", "text"]
+- !private ["SQ", "txtfldUnitPrice"]
+- !private ["SQ", "vwSaperator"]
+- !private ["SQ", "vwUnitPrice"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "ColorConstants"]
+- ["SH", ""]
+- !private ["SH", "awakeFromNib"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "borderColor"]
+- !private ["SH", "borderWidth"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "itemMargin"]
+- !private ["SH", "itemProductionCost"]
+- !private ["SH", "itemQuantity"]
+- !private ["SH", "itemSubTotal"]
+- !private ["SH", "itemUnitPrice"]
+- !private ["SH", "layer"]
+- !private ["SH", "lblItemMargin"]
+- !private ["SH", "lblItemQuantity"]
+- !private ["SH", "lblProductionCost"]
+- !private ["SH", "lblSubtotal"]
+- !private ["SH", "setSelected"]
+- !private ["SH", "setupUI"]
+- !private ["SH", "text"]
+- !private ["SH", "txtfldUnitPrice"]
+- !private ["SH", "vwSaperator"]
+- !private ["SH", "vwUnitPrice"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "ColorConstants"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "borderColor"]
+- !private ["So8NSCodingP", "borderWidth"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "lblItemMargin"]
+- !private ["So8NSCodingP", "lblItemQuantity"]
+- !private ["So8NSCodingP", "lblProductionCost"]
+- !private ["So8NSCodingP", "lblSubtotal"]
+- !private ["So8NSCodingP", "setSelected"]
+- !private ["So8NSCodingP", "setupUI"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "txtfldUnitPrice"]
+- !private ["So8NSCodingP", "vwSaperator"]
+- !private ["So8NSCodingP", "vwUnitPrice"]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "ColorConstants"]
+- ["So8NSObjectC", "DSRCartItemListModel"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "borderColor"]
+- !private ["So8NSObjectC", "borderWidth"]
+- ["So8NSObjectC", "btnAddMargin"]
+- ["So8NSObjectC", "btnAddUnit"]
+- ["So8NSObjectC", "btnRemoveMargin"]
+- ["So8NSObjectC", "btnRemoveUnit"]
+- !private ["So8NSObjectC", "cgColor"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "itemMargin"]
+- !private ["So8NSObjectC", "itemProductionCost"]
+- !private ["So8NSObjectC", "itemQuantity"]
+- !private ["So8NSObjectC", "itemSubTotal"]
+- !private ["So8NSObjectC", "itemUnitPrice"]
+- !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "lblItemMargin"]
+- ["So8NSObjectC", "lblItemQuantity"]
+- ["So8NSObjectC", "lblProductionCost"]
+- ["So8NSObjectC", "lblSubtotal"]
+- ["So8NSObjectC", "setSelected"]
+- ["So8NSObjectC", "setupCell"]
+- ["So8NSObjectC", "setupUI"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "txtfldUnitPrice"]
+- ["So8NSObjectC", "vwSaperator"]
+- ["So8NSObjectC", "vwUnitPrice"]
+- !private ["So8NSObjectP", "ColorConstants"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "awakeFromNib"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "borderColor"]
+- !private ["So8NSObjectP", "borderWidth"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "itemMargin"]
+- !private ["So8NSObjectP", "itemProductionCost"]
+- !private ["So8NSObjectP", "itemQuantity"]
+- !private ["So8NSObjectP", "itemSubTotal"]
+- !private ["So8NSObjectP", "itemUnitPrice"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "lblItemMargin"]
+- !private ["So8NSObjectP", "lblItemQuantity"]
+- !private ["So8NSObjectP", "lblProductionCost"]
+- !private ["So8NSObjectP", "lblSubtotal"]
+- !private ["So8NSObjectP", "setSelected"]
+- !private ["So8NSObjectP", "setupUI"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "txtfldUnitPrice"]
+- !private ["So8NSObjectP", "vwSaperator"]
+- !private ["So8NSObjectP", "vwUnitPrice"]
+- !private ["So14NSSecureCodingP", "borderColor"]
+- !private ["So14NSSecureCodingP", "borderWidth"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["Sq", "backgroundColor"]
+- !private ["Sq", "layer"]
+- !private ["Sq", "text"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "ColorConstants"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "lblItemMargin"]
+- !private ["So29UIAccessibilityIdentificationP", "lblItemQuantity"]
+- !private ["So29UIAccessibilityIdentificationP", "lblProductionCost"]
+- !private ["So29UIAccessibilityIdentificationP", "lblSubtotal"]
+- !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "setupUI"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "txtfldUnitPrice"]
+- !private ["So29UIAccessibilityIdentificationP", "vwSaperator"]
+- !private ["So29UIAccessibilityIdentificationP", "vwUnitPrice"]
+- !private ["So12UIAppearanceP", "ColorConstants"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "lblItemMargin"]
+- !private ["So12UIAppearanceP", "lblItemQuantity"]
+- !private ["So12UIAppearanceP", "lblProductionCost"]
+- !private ["So12UIAppearanceP", "lblSubtotal"]
+- !private ["So12UIAppearanceP", "setSelected"]
+- !private ["So12UIAppearanceP", "setupUI"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "txtfldUnitPrice"]
+- !private ["So12UIAppearanceP", "vwSaperator"]
+- !private ["So12UIAppearanceP", "vwUnitPrice"]
+- !private ["So21UIAppearanceContainerP", "ColorConstants"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "lblItemMargin"]
+- !private ["So21UIAppearanceContainerP", "lblItemQuantity"]
+- !private ["So21UIAppearanceContainerP", "lblProductionCost"]
+- !private ["So21UIAppearanceContainerP", "lblSubtotal"]
+- !private ["So21UIAppearanceContainerP", "setSelected"]
+- !private ["So21UIAppearanceContainerP", "setupUI"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "txtfldUnitPrice"]
+- !private ["So21UIAppearanceContainerP", "vwSaperator"]
+- !private ["So21UIAppearanceContainerP", "vwUnitPrice"]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "ColorConstants"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "lblItemMargin"]
+- !private ["So17UICoordinateSpaceP", "lblItemQuantity"]
+- !private ["So17UICoordinateSpaceP", "lblProductionCost"]
+- !private ["So17UICoordinateSpaceP", "lblSubtotal"]
+- !private ["So17UICoordinateSpaceP", "setSelected"]
+- !private ["So17UICoordinateSpaceP", "setupUI"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "txtfldUnitPrice"]
+- !private ["So17UICoordinateSpaceP", "vwSaperator"]
+- !private ["So17UICoordinateSpaceP", "vwUnitPrice"]
+- !private ["So13UIDynamicItemP", "ColorConstants"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "lblItemMargin"]
+- !private ["So13UIDynamicItemP", "lblItemQuantity"]
+- !private ["So13UIDynamicItemP", "lblProductionCost"]
+- !private ["So13UIDynamicItemP", "lblSubtotal"]
+- !private ["So13UIDynamicItemP", "setSelected"]
+- !private ["So13UIDynamicItemP", "setupUI"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "txtfldUnitPrice"]
+- !private ["So13UIDynamicItemP", "vwSaperator"]
+- !private ["So13UIDynamicItemP", "vwUnitPrice"]
+- !private ["So18UIFocusEnvironmentP", "ColorConstants"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "lblItemMargin"]
+- !private ["So18UIFocusEnvironmentP", "lblItemQuantity"]
+- !private ["So18UIFocusEnvironmentP", "lblProductionCost"]
+- !private ["So18UIFocusEnvironmentP", "lblSubtotal"]
+- !private ["So18UIFocusEnvironmentP", "setSelected"]
+- !private ["So18UIFocusEnvironmentP", "setupUI"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "txtfldUnitPrice"]
+- !private ["So18UIFocusEnvironmentP", "vwSaperator"]
+- !private ["So18UIFocusEnvironmentP", "vwUnitPrice"]
+- !private ["So11UIFocusItemP", "ColorConstants"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "lblItemMargin"]
+- !private ["So11UIFocusItemP", "lblItemQuantity"]
+- !private ["So11UIFocusItemP", "lblProductionCost"]
+- !private ["So11UIFocusItemP", "lblSubtotal"]
+- !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So11UIFocusItemP", "setupUI"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "txtfldUnitPrice"]
+- !private ["So11UIFocusItemP", "vwSaperator"]
+- !private ["So11UIFocusItemP", "vwUnitPrice"]
+- !private ["So20UIFocusItemContainerP", "ColorConstants"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "awakeFromNib"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "lblItemMargin"]
+- !private ["So20UIFocusItemContainerP", "lblItemQuantity"]
+- !private ["So20UIFocusItemContainerP", "lblProductionCost"]
+- !private ["So20UIFocusItemContainerP", "lblSubtotal"]
+- !private ["So20UIFocusItemContainerP", "setSelected"]
+- !private ["So20UIFocusItemContainerP", "setupUI"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "txtfldUnitPrice"]
+- !private ["So20UIFocusItemContainerP", "vwSaperator"]
+- !private ["So20UIFocusItemContainerP", "vwUnitPrice"]
+- !private ["So27UIGestureRecognizerDelegateP", "ColorConstants"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "lblItemMargin"]
+- !private ["So27UIGestureRecognizerDelegateP", "lblItemQuantity"]
+- !private ["So27UIGestureRecognizerDelegateP", "lblProductionCost"]
+- !private ["So27UIGestureRecognizerDelegateP", "lblSubtotal"]
+- !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- !private ["So27UIGestureRecognizerDelegateP", "setupUI"]
+- !private ["So27UIGestureRecognizerDelegateP", "txtfldUnitPrice"]
+- !private ["So27UIGestureRecognizerDelegateP", "vwSaperator"]
+- !private ["So27UIGestureRecognizerDelegateP", "vwUnitPrice"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "ColorConstants"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblItemMargin"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblItemQuantity"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblProductionCost"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblSubtotal"]
+- !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "setupUI"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "txtfldUnitPrice"]
+- !private ["So30UIPasteConfigurationSupportingP", "vwSaperator"]
+- !private ["So30UIPasteConfigurationSupportingP", "vwUnitPrice"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "ColorConstants"]
+- ["So11UIResponderC", "DSRCartItemListModel"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "UIView"]
+- ["So11UIResponderC", "awakeFromNib"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "btnAddMargin"]
+- ["So11UIResponderC", "btnAddUnit"]
+- ["So11UIResponderC", "btnRemoveMargin"]
+- ["So11UIResponderC", "btnRemoveUnit"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "lblItemMargin"]
+- ["So11UIResponderC", "lblItemQuantity"]
+- ["So11UIResponderC", "lblProductionCost"]
+- ["So11UIResponderC", "lblSubtotal"]
+- ["So11UIResponderC", "setSelected"]
+- ["So11UIResponderC", "setupCell"]
+- ["So11UIResponderC", "setupUI"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "txtfldUnitPrice"]
+- ["So11UIResponderC", "vwSaperator"]
+- ["So11UIResponderC", "vwUnitPrice"]
+- !private ["So30UIResponderStandardEditActionsP", "ColorConstants"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "lblItemMargin"]
+- !private ["So30UIResponderStandardEditActionsP", "lblItemQuantity"]
+- !private ["So30UIResponderStandardEditActionsP", "lblProductionCost"]
+- !private ["So30UIResponderStandardEditActionsP", "lblSubtotal"]
+- !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "setupUI"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "txtfldUnitPrice"]
+- !private ["So30UIResponderStandardEditActionsP", "vwSaperator"]
+- !private ["So30UIResponderStandardEditActionsP", "vwUnitPrice"]
+- ["So15UITableViewCellC", "Bool"]
+- !private ["So15UITableViewCellC", "ColorConstants"]
+- ["So15UITableViewCellC", "DSRCartItemListModel"]
+- ["So15UITableViewCellC", "UIButton"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "UITextField"]
+- ["So15UITableViewCellC", "UIView"]
+- ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "btnAddMargin"]
+- ["So15UITableViewCellC", "btnAddUnit"]
+- ["So15UITableViewCellC", "btnRemoveMargin"]
+- ["So15UITableViewCellC", "btnRemoveUnit"]
+- ["So15UITableViewCellC", "init"]
+- !private ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "lblItemMargin"]
+- ["So15UITableViewCellC", "lblItemQuantity"]
+- ["So15UITableViewCellC", "lblProductionCost"]
+- ["So15UITableViewCellC", "lblSubtotal"]
+- ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", "setupCell"]
+- ["So15UITableViewCellC", "setupUI"]
+- ["So15UITableViewCellC", "txtfldUnitPrice"]
+- ["So15UITableViewCellC", "vwSaperator"]
+- ["So15UITableViewCellC", "vwUnitPrice"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "ColorConstants"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "lblItemMargin"]
+- !private ["So18UITraitEnvironmentP", "lblItemQuantity"]
+- !private ["So18UITraitEnvironmentP", "lblProductionCost"]
+- !private ["So18UITraitEnvironmentP", "lblSubtotal"]
+- !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So18UITraitEnvironmentP", "setupUI"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "txtfldUnitPrice"]
+- !private ["So18UITraitEnvironmentP", "vwSaperator"]
+- !private ["So18UITraitEnvironmentP", "vwUnitPrice"]
+- !private ["So23UIUserActivityRestoringP", "ColorConstants"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "lblItemMargin"]
+- !private ["So23UIUserActivityRestoringP", "lblItemQuantity"]
+- !private ["So23UIUserActivityRestoringP", "lblProductionCost"]
+- !private ["So23UIUserActivityRestoringP", "lblSubtotal"]
+- !private ["So23UIUserActivityRestoringP", "setSelected"]
+- !private ["So23UIUserActivityRestoringP", "setupUI"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "txtfldUnitPrice"]
+- !private ["So23UIUserActivityRestoringP", "vwSaperator"]
+- !private ["So23UIUserActivityRestoringP", "vwUnitPrice"]
+- ["So6UIViewC", "Bool"]
+- !private ["So6UIViewC", "ColorConstants"]
+- ["So6UIViewC", "DSRCartItemListModel"]
+- ["So6UIViewC", "UIButton"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "UITextField"]
+- ["So6UIViewC", "UIView"]
+- ["So6UIViewC", "awakeFromNib"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So6UIViewC", "btnAddMargin"]
+- ["So6UIViewC", "btnAddUnit"]
+- ["So6UIViewC", "btnRemoveMargin"]
+- ["So6UIViewC", "btnRemoveUnit"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "lblItemMargin"]
+- ["So6UIViewC", "lblItemQuantity"]
+- ["So6UIViewC", "lblProductionCost"]
+- ["So6UIViewC", "lblSubtotal"]
+- ["So6UIViewC", "setSelected"]
+- ["So6UIViewC", "setupCell"]
+- ["So6UIViewC", "setupUI"]
+- !private ["So6UIViewC", "text"]
+- ["So6UIViewC", "txtfldUnitPrice"]
+- ["So6UIViewC", "vwSaperator"]
+- ["So6UIViewC", "vwUnitPrice"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "ColorConstants"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "lblItemMargin"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "lblItemQuantity"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "lblProductionCost"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "lblSubtotal"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setupUI"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "txtfldUnitPrice"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "vwSaperator"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "vwUnitPrice"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ColorConstants"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itemMargin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itemProductionCost"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itemQuantity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itemSubTotal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itemUnitPrice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblItemMargin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblItemQuantity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblProductionCost"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblSubtotal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupUI"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "txtfldUnitPrice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "vwSaperator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "vwUnitPrice"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["6BEKApp14ColorConstantsC06borderB0V", "gray"]
+depends-nominal:
+- !private "SK"
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "6BEKApp14ColorConstantsC"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "6BEKApp20DSRCartItemListModelC"
+- "6BEKApp20DSRCartTableViewCellC"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So10UIKeyInputP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- !private "9Alamofire14URLConvertibleP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+- !private "6BEKApp14ColorConstantsC06borderB0V"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Headers/BHTextFieldManager+Accesory.h"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/Pods/BHTextFieldManager/BHTextFieldManager/BHTextFieldManager.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/mac/Desktop/23March/BEKApp-master/build/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Users/mac/Documents/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1fac4c471b81d5832d94101a503b5827"
