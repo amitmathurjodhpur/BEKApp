@@ -41,14 +41,16 @@ class LoginVC: BaseVC {
         if let userId = UserDefaultsManager.shared.userName as String?, let password = UserDefaultsManager.shared.password as String?, !userId.isEmpty, !password.isEmpty {
             self.Authenticate { (success) in
                 print(success)
-                DispatchQueue.main.async {
-                    if userId != "pizzaplanetama@hybris.com" {
-                         self.txtfldUsername.text = UserDefaultsManager.shared.tmpuserName
-                    } else {
-                         self.txtfldUsername.text = UserDefaultsManager.shared.userName
+                if success {
+                    DispatchQueue.main.async {
+                        if userId != "pizzaplanetama@hybris.com" {
+                            self.txtfldUsername.text = UserDefaultsManager.shared.tmpuserName
+                        } else {
+                            self.txtfldUsername.text = UserDefaultsManager.shared.userName
+                        }
+                        self.txtfldPassword.text = password
+                        self.loginAPICall()
                     }
-                    self.txtfldPassword.text = password
-                    self.loginAPICall()
                 }
             }
         }
@@ -125,7 +127,7 @@ class LoginVC: BaseVC {
             strMessage = "Please goto the Settings & Turn On Passcode"
             
         case LAError.Code.touchIDNotAvailable.rawValue:
-            strMessage = "TouchI or FaceID DNot Available"
+            strMessage = "TouchID or FaceID Not Available"
             
         case LAError.Code.touchIDNotEnrolled.rawValue:
             strMessage = "TouchID or FaceID Not Enrolled"
