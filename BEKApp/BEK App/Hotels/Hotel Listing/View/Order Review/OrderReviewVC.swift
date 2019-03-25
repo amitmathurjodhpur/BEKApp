@@ -20,7 +20,7 @@ class OrderReviewVC: BaseVC {
     @IBOutlet weak var lblMargin: UILabel!
     @IBOutlet weak var vwBottumExpandedPriceDetail: UIView!
     @IBOutlet weak var customScrollIndicator: UIView!
-    
+    @IBOutlet weak var lblCartBadge: UILabel!
     @IBOutlet weak var vwSwitchMain: UIView!
     @IBOutlet weak var vwSwitchUserMode: UIView!
     @IBOutlet weak var vwSwitchUserModeLeftConstraint: NSLayoutConstraint!
@@ -80,6 +80,8 @@ class OrderReviewVC: BaseVC {
         //        self.bhFramework.setEnable(self.view)
         self.bhFramework.delegate = self
         self.isClientModeOn = UserDefaultsManager.shared.isClientModeOn
+        let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
+        self.lblCartBadge.text = "\(dbSourceFromDB.count)"
     }
     
     override func didReceiveMemoryWarning() {

@@ -131,7 +131,7 @@ class HotelDetailVC: BaseVC {
     @IBAction func cartBtnAction(_ sender: UIButton) {
         if isCartHavingItems() {
             let nextVC = OrderReviewVC.instantiate(fromAppStoryboard: .Hotels)
-            nextVC.hotelDetails = nil
+            nextVC.hotelDetails = self.hotelDetails
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
         else {

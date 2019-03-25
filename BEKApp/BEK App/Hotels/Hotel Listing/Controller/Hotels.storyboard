@@ -1050,6 +1050,12 @@
                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37A-Mc-4dh">
+                                        <rect key="frame" x="337" y="-3" width="9.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="BerninoSans-Condensed" family="Bernino Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.49803921569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAj-ay-HIg">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
                                         <constraints>
@@ -1061,15 +1067,30 @@
                                             <action selector="backBtnAction:" destination="GdI-Ow-5TU" eventType="touchUpInside" id="u0C-Qw-8fl"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV6-qH-pwd">
+                                        <rect key="frame" x="302" y="0.0" width="70" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="DKU-MA-zdu"/>
+                                        </constraints>
+                                        <state key="normal" image="shopping-cart"/>
+                                        <connections>
+                                            <action selector="cartBtnAction:" destination="s0S-lf-ZF0" eventType="touchUpInside" id="VIG-fD-7pT"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="M7l-Su-vkW" firstAttribute="top" secondItem="mwM-d9-sYO" secondAttribute="top" id="EDS-yA-MrT"/>
                                     <constraint firstAttribute="bottom" secondItem="YAj-ay-HIg" secondAttribute="bottom" id="J3Q-gn-YJO"/>
+                                    <constraint firstItem="BV6-qH-pwd" firstAttribute="bottom" secondItem="M7l-Su-vkW" secondAttribute="bottom" id="P61-CM-hJQ"/>
+                                    <constraint firstItem="37A-Mc-4dh" firstAttribute="leading" secondItem="M7l-Su-vkW" secondAttribute="trailing" constant="35" id="Q4b-ci-BqQ"/>
                                     <constraint firstItem="YAj-ay-HIg" firstAttribute="top" secondItem="mwM-d9-sYO" secondAttribute="top" id="QMf-oS-iJG"/>
                                     <constraint firstItem="YAj-ay-HIg" firstAttribute="leading" secondItem="mwM-d9-sYO" secondAttribute="leading" id="STi-hZ-1xM"/>
                                     <constraint firstAttribute="height" constant="50" id="Swm-bq-y86"/>
+                                    <constraint firstItem="BV6-qH-pwd" firstAttribute="leading" secondItem="M7l-Su-vkW" secondAttribute="trailing" id="bRE-Z0-d0U"/>
                                     <constraint firstAttribute="bottom" secondItem="M7l-Su-vkW" secondAttribute="bottom" id="g2c-uJ-WOY"/>
+                                    <constraint firstItem="37A-Mc-4dh" firstAttribute="top" secondItem="mwM-d9-sYO" secondAttribute="top" constant="-3" id="gSe-rJ-On3"/>
+                                    <constraint firstItem="BV6-qH-pwd" firstAttribute="top" secondItem="M7l-Su-vkW" secondAttribute="top" id="hfu-zW-qaD"/>
                                     <constraint firstItem="M7l-Su-vkW" firstAttribute="leading" secondItem="YAj-ay-HIg" secondAttribute="trailing" constant="3" id="pOe-aN-LNB"/>
                                     <constraint firstItem="M7l-Su-vkW" firstAttribute="centerX" secondItem="mwM-d9-sYO" secondAttribute="centerX" id="qKA-h0-FdU"/>
                                     <constraint firstItem="M7l-Su-vkW" firstAttribute="centerY" secondItem="mwM-d9-sYO" secondAttribute="centerY" id="wxZ-78-BjV"/>
@@ -1390,6 +1411,7 @@
                     </view>
                     <connections>
                         <outlet property="customScrollIndicator" destination="Ap2-kk-HhM" id="l78-fr-S0J"/>
+                        <outlet property="lblCartBadge" destination="37A-Mc-4dh" id="p2R-gS-eeq"/>
                         <outlet property="lblCost" destination="LHd-xF-tTR" id="lfB-a1-9M5"/>
                         <outlet property="lblMargin" destination="j5L-QA-Vmm" id="wEw-0c-tiy"/>
                         <outlet property="lblSalePrice" destination="X4k-YZ-D4K" id="Fwc-av-V2F"/>

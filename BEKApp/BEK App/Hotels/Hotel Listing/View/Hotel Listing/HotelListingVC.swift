@@ -50,7 +50,7 @@ class HotelListingVC: BaseVC {
     @IBAction func cartBtnAction(_ sender: UIButton) {
         if self.isCartHavingItems() {
             let nextVC = OrderReviewVC.instantiate(fromAppStoryboard: .Hotels)
-            nextVC.hotelDetails = nil
+            //nextVC.hotelDetails = self.hotelDetails
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
         else {
