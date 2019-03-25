@@ -72,10 +72,11 @@ class HotelDetailVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.setupView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.setupView()
+    }
     override func viewDidAppear(_ animated: Bool) {
         let _ = self.isCartHavingItems()
         self.isClientModeOn = UserDefaultsManager.shared.isClientModeOn
@@ -119,6 +120,7 @@ class HotelDetailVC: BaseVC {
         appDelegate.TempArrayOrderHistory.removeAll()
         let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
         nextVC.hotelDetails = self.hotelDetails
+        nextVC.isComeFromHistory = false
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -178,10 +180,10 @@ extension HotelDetailVC {
     
     
     private func getCartDataAndSetDatasource() {
+        self.arrFilteredDatasource.removeAll()
+        self.arrItemListing.removeAll()
         let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
         for dbSource in dbSourceFromDB {
-            
-            
             self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: dbSource.hotelId, hotelName: dbSource.hotelName, itemId: dbSource.itemId, itemMargin: dbSource.itemMargin, itemName: dbSource.itemName!, itemPerBagQuantity: dbSource.itemPerBagQuantity!, itemProductionCost: dbSource.itemProductionCost, itemQuantity: dbSource.itemQuantity, itemSubTotal: dbSource.itemSubTotal, itemTitle: dbSource.itemTitle, itemUnitPrice: dbSource.itemUnitPrice)))
         }
         self.arrFilteredDatasource = self.arrItemListing
@@ -333,6 +335,7 @@ extension HotelDetailVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
         nextVC.hotelDetails = self.hotelDetails
+         nextVC.isComeFromHistory = true
         appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
         self.navigationController?.pushViewController(nextVC, animated: true)
     }

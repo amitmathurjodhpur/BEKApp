@@ -254,7 +254,7 @@ extension OrderReviewVC {
             else {
                 //Net is off
                 self.hideLoadingIndicator()
-                self.showAlertWithMessage(message: "Please check your network connection.")
+                self.showAlertWithMessage(message: "we couldn’t place your order but it is saved locally. You can submit it later from open items.")
             }
         }
     }

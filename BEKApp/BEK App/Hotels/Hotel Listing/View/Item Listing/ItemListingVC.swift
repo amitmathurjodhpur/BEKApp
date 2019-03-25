@@ -33,20 +33,13 @@ class ItemListingVC: BaseVC {
     
     @IBOutlet weak var lblCartBadge: UILabel!
     @IBOutlet weak var vwCartBadge: UIView!
-    
      @IBOutlet weak var popView: UIView!
      @IBOutlet weak var popupImage: UIImageView!
      @IBOutlet weak var popupTitle: UILabel!
      @IBOutlet weak var popupDesc: UILabel!
     
     @IBOutlet weak var lblVCTitle: UILabel!
-    
-    
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-
-    
-    
-    
+   let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var imageDict: Dictionary<String, String> = [:]
     private var isClientModeOn: Bool! = true {
         didSet {
@@ -73,7 +66,7 @@ class ItemListingVC: BaseVC {
             self.updateDataSourceForDSRMode()
         }
     }
-    
+    var isComeFromHistory: Bool = false
     private var responseData: GetProductListSearchResponse?
     var arrItemListing: [DSRCartItemListDatasourceModel] = []
     var arrFilteredDatasource: [DSRCartItemListDatasourceModel]! = [] {
@@ -172,6 +165,9 @@ print(self.arrFilteredDatasource)
 //MARK:- Private Function
 extension ItemListingVC {
     private func setupView() {
+        if !self.isComeFromHistory {
+            CoreDataModel.shared.deleteAllCartData(for: .cart)
+        }
         self.lblVCTitle.text = self.hotelDetails.hotelName
         self.txtfldSearch.delegate = self
         self.isClientModeOn = UserDefaultsManager.shared.isClientModeOn

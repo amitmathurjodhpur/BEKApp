@@ -141,8 +141,9 @@ extension DashboardVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
             self.navigationController?.pushViewController(nextVC, animated: true)
         case 6:
              let appDelegate = UIApplication.shared.delegate as! AppDelegate
-             if let hotelObj = appDelegate.hotelDetails {
+             if let hotelObj = appDelegate.hotelDetails, self.arrItemListing.count > 0 {
                 let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
+                nextVC.isComeFromHistory = true
                 nextVC.hotelDetails = hotelObj
                 appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
                 self.navigationController?.pushViewController(nextVC, animated: true)
