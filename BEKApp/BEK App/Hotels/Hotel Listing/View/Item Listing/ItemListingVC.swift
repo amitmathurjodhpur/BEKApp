@@ -71,7 +71,9 @@ class ItemListingVC: BaseVC {
     var arrItemListing: [DSRCartItemListDatasourceModel] = []
     var arrFilteredDatasource: [DSRCartItemListDatasourceModel]! = [] {
         didSet {
+             UIView.performWithoutAnimation {
             self.tblvwItemListing.reloadData()
+            }
             self.setCartTotalPrice()
         }
     }
@@ -216,7 +218,10 @@ extension ItemListingVC {
         for item in self.arrFilteredDatasource {
             item.isCollapsed = !self.isClientModeOn
         }
-        self.tblvwItemListing.reloadData()
+       
+        UIView.performWithoutAnimation {
+            self.tblvwItemListing.reloadData()
+        }
     }
     
     private func isCartHavingItems() -> Bool {
@@ -702,7 +707,9 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
     @objc func btnAddQtyHeaderTapped(_ sender: UIButton) {
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity + 1
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
+         UIView.performWithoutAnimation {
         self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+        }
         self.setCartTotalPrice()
     }
     
@@ -710,7 +717,9 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         if (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1) >= 0 {
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
+             UIView.performWithoutAnimation {
             self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            }
             self.setCartTotalPrice()
         }
     }
@@ -751,7 +760,10 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
     @objc func btnAddQtyCellTapped(_ sender: UIButton) {
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity + 1
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
-        self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+        UIView.performWithoutAnimation {
+            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+        }
+        
         self.setCartTotalPrice()
     }
     
@@ -759,7 +771,10 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         if (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1) >= 0 {
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
-            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            UIView.performWithoutAnimation {
+                 self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            }
+           
             self.setCartTotalPrice()
         }
     }
@@ -767,7 +782,9 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
     @objc func btnAddMarginCellTapped(_ sender: UIButton) {
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin = (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin + 0.1).rounded(toPlaces: 1)
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
+         UIView.performWithoutAnimation {
         self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+        }
         self.setCartTotalPrice()
     }
     
@@ -775,7 +792,9 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         if (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin - 0.1) >= 0 {
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin = (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin - 0.1).rounded(toPlaces: 1)
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
+             UIView.performWithoutAnimation {
             self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            }
             self.setCartTotalPrice()
         }
     }
@@ -804,6 +823,8 @@ extension ItemListingVC: CollapsibleTableViewSectionDelegate {
         let collapsed = !self.arrFilteredDatasource[section].isCollapsed!
         self.arrFilteredDatasource[section].isCollapsed = collapsed
         header.setCollapsed(collapsed)
+         UIView.performWithoutAnimation {
         self.tblvwItemListing.reloadSections(IndexSet(integer: section), with: .none)
+        }
     }
 }

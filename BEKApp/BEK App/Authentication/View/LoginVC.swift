@@ -43,11 +43,7 @@ class LoginVC: BaseVC {
                 print(success)
                 if success {
                     DispatchQueue.main.async {
-                        if userId != "pizzaplanetama@hybris.com" {
-                            self.txtfldUsername.text = UserDefaultsManager.shared.tmpuserName
-                        } else {
-                            self.txtfldUsername.text = UserDefaultsManager.shared.userName
-                        }
+                        self.txtfldUsername.text = UserDefaultsManager.shared.tmpuserName
                         self.txtfldPassword.text = password
                         self.loginAPICall()
                     }
