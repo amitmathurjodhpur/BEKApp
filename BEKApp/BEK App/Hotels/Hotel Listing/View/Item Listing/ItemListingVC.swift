@@ -33,13 +33,16 @@ class ItemListingVC: BaseVC {
     
     @IBOutlet weak var lblCartBadge: UILabel!
     @IBOutlet weak var vwCartBadge: UIView!
-     @IBOutlet weak var popView: UIView!
-     @IBOutlet weak var popupImage: UIImageView!
-     @IBOutlet weak var popupTitle: UILabel!
-     @IBOutlet weak var popupDesc: UILabel!
+    @IBOutlet weak var popView: UIView!
+    @IBOutlet weak var popupImage: UIImageView!
+    @IBOutlet weak var popupTitle: UILabel!
+    @IBOutlet weak var popupDesc: UILabel!
     
     @IBOutlet weak var lblVCTitle: UILabel!
-   let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBOutlet weak var bottomViewHeightConstraint: NSLayoutConstraint!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var imageDict: Dictionary<String, String> = [:]
     private var isClientModeOn: Bool! = true {
         didSet {
@@ -52,6 +55,7 @@ class ItemListingVC: BaseVC {
                 self.lblSwitchUserMode.text = UserType.client.rawValue
                 self.vwBottumExpandedPriceDetail.isHidden = true
                 self.lblTotalAomount.isHidden = false
+                self.bottomViewHeightConstraint.constant = 221 - 96 - 3
             }
             else {
                 self.vwSwitchUserModeRightConstraint.isActive = false
@@ -62,6 +66,7 @@ class ItemListingVC: BaseVC {
                 self.lblSwitchUserMode.text = UserType.DSR.rawValue
                 self.vwBottumExpandedPriceDetail.isHidden = false
                 self.lblTotalAomount.isHidden = true
+                self.bottomViewHeightConstraint.constant = 221
             }
             self.updateDataSourceForDSRMode()
         }
@@ -71,8 +76,8 @@ class ItemListingVC: BaseVC {
     var arrItemListing: [DSRCartItemListDatasourceModel] = []
     var arrFilteredDatasource: [DSRCartItemListDatasourceModel]! = [] {
         didSet {
-             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadData()
+            UIView.performWithoutAnimation {
+                self.tblvwItemListing.reloadData()
             }
             self.setCartTotalPrice()
         }
@@ -113,10 +118,10 @@ class ItemListingVC: BaseVC {
         
         
         
-print(self.arrFilteredDatasource)
+        print(self.arrFilteredDatasource)
         self.setCartTotalPrice()
-
-
+        
+        
     }
     
     //MARK:- IB Actions
@@ -127,7 +132,7 @@ print(self.arrFilteredDatasource)
     }
     
     @IBAction func dismissPopup(_ sender: UIButton) {
-       setView(view: popView, hidden: true)
+        setView(view: popView, hidden: true)
     }
     
     @IBAction func btnReviewTapped(_ sender: UIButton) {
@@ -187,7 +192,7 @@ extension ItemListingVC {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? Dictionary<String, String> {
-                     imageDict = jsonResult
+                    imageDict = jsonResult
                 }
             } catch {
                 print("Error")
@@ -218,7 +223,7 @@ extension ItemListingVC {
         for item in self.arrFilteredDatasource {
             item.isCollapsed = !self.isClientModeOn
         }
-       
+        
         UIView.performWithoutAnimation {
             self.tblvwItemListing.reloadData()
         }
@@ -231,7 +236,7 @@ extension ItemListingVC {
     }
     
     private func setCartItemToDatabase() -> Bool {
-    CoreDataModel.shared.deleteAllCartData(for: .cart)
+        CoreDataModel.shared.deleteAllCartData(for: .cart)
         var isSaved: Bool! = false
         for item in self.arrItemListing {
             if item.dsrCarListModel.itemSubTotal > 0 {
@@ -305,9 +310,9 @@ extension ItemListingVC {
                     {
                         item2.dsrCarListModel.itemQuantity = items.dsrCarListModel.itemQuantity
                         item2.dsrCarListModel.itemMargin = items.dsrCarListModel.itemMargin
-                         item2.dsrCarListModel.itemSubTotal = items.dsrCarListModel.itemSubTotal
+                        item2.dsrCarListModel.itemSubTotal = items.dsrCarListModel.itemSubTotal
                         item2.dsrCarListModel.itemProductionCost = items.dsrCarListModel.itemProductionCost
-
+                        
                         self.arrItemListing[k] = item2
                         
                     }
@@ -696,19 +701,19 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
     @objc func showAlert(gestureRecognizer: UIGestureRecognizer) {
         if let v1 = gestureRecognizer.view?.tag, let listObj = self.arrFilteredDatasource[v1].dsrCarListModel {
             print(listObj.itemName)
-                print(listObj.itemName)
-                self.popupImage.image = UIImage(named: self.getImageName(productName: "\(listObj.itemName ?? "155195.jpeg")"))
-                self.popupTitle.text = listObj.itemName
+            print(listObj.itemName)
+            self.popupImage.image = UIImage(named: self.getImageName(productName: "\(listObj.itemName ?? "155195.jpeg")"))
+            self.popupTitle.text = listObj.itemName
             self.popupDesc.text = "Golden Harvest cream cheese is a fresh, natural cheese that can be used as a spread or dip, as well as in sweet or savory dishes. Smooth and creamy, its primary ingredient is cream rather than milk. A starter culture is added to the milk and cream. This process causes it to ferment and creates cream cheese’s unique texture and flavor.\n \nA holiday staple to keep in your kitchen, make sure you have plenty on hand!" //listObj.itemPerBagQuantity
-                setView(view: popView, hidden: false)
+            setView(view: popView, hidden: false)
         }
     }
     
     @objc func btnAddQtyHeaderTapped(_ sender: UIButton) {
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity + 1
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
-         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+        UIView.performWithoutAnimation {
+            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
         }
         self.setCartTotalPrice()
     }
@@ -717,8 +722,8 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         if (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1) >= 0 {
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
-             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            UIView.performWithoutAnimation {
+                self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
             self.setCartTotalPrice()
         }
@@ -772,9 +777,9 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
             UIView.performWithoutAnimation {
-                 self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+                self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
-           
+            
             self.setCartTotalPrice()
         }
     }
@@ -782,8 +787,8 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
     @objc func btnAddMarginCellTapped(_ sender: UIButton) {
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin = (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin + 0.1).rounded(toPlaces: 1)
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
-         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+        UIView.performWithoutAnimation {
+            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
         }
         self.setCartTotalPrice()
     }
@@ -792,8 +797,8 @@ extension ItemListingVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         if (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin - 0.1) >= 0 {
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin = (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin - 0.1).rounded(toPlaces: 1)
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
-             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            UIView.performWithoutAnimation {
+                self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
             self.setCartTotalPrice()
         }
@@ -823,8 +828,8 @@ extension ItemListingVC: CollapsibleTableViewSectionDelegate {
         let collapsed = !self.arrFilteredDatasource[section].isCollapsed!
         self.arrFilteredDatasource[section].isCollapsed = collapsed
         header.setCollapsed(collapsed)
-         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: section), with: .none)
+        UIView.performWithoutAnimation {
+            self.tblvwItemListing.reloadSections(IndexSet(integer: section), with: .none)
         }
     }
 }

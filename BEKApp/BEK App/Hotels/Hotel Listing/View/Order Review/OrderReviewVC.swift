@@ -30,6 +30,7 @@ class OrderReviewVC: BaseVC {
     @IBOutlet weak var lblSwitchUserModeRightConstraint: NSLayoutConstraint!
     @IBOutlet weak var voiceAlertViewContainer: UIView!
     @IBOutlet weak var lblVCTitle: UILabel!
+    @IBOutlet weak var bottomViewHeightConstraint: NSLayoutConstraint!
     
     private var isClientModeOn: Bool! = true {
         didSet {
@@ -42,6 +43,7 @@ class OrderReviewVC: BaseVC {
                 self.lblSwitchUserMode.text = UserType.client.rawValue
                 self.vwBottumExpandedPriceDetail.isHidden = true
                 self.lblTotalAomount.isHidden = false
+                self.bottomViewHeightConstraint.constant = 221 - 96 - 3
             }
             else {
                 self.vwSwitchUserModeRightConstraint.isActive = false
@@ -52,6 +54,7 @@ class OrderReviewVC: BaseVC {
                 self.lblSwitchUserMode.text = UserType.DSR.rawValue
                 self.vwBottumExpandedPriceDetail.isHidden = false
                 self.lblTotalAomount.isHidden = true
+                self.bottomViewHeightConstraint.constant = 221
             }
             self.updateDataSourceForDSRMode()
         }
@@ -62,7 +65,7 @@ class OrderReviewVC: BaseVC {
     var arrFilteredDatasource: [DSRCartItemListDatasourceModel]! = [] {
         didSet {
             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadData()
+                self.tblvwItemListing.reloadData()
             }
         }
     }
@@ -155,7 +158,7 @@ extension OrderReviewVC {
             item.isCollapsed = !self.isClientModeOn
         }
         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadData()
+            self.tblvwItemListing.reloadData()
         }
     }
     
@@ -228,9 +231,9 @@ extension OrderReviewVC {
 extension OrderReviewVC {
     private func createCartForUserAPI() {
         self.showLoadingIndicator()
-       let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/\(UserDefaultsManager.shared.userName)/carts"
-       // let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/pizzaplanetama@hybris.com/carts"
-
+        let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/\(UserDefaultsManager.shared.userName)/carts"
+        // let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/pizzaplanetama@hybris.com/carts"
+        
         APIHelper.shared.post(request: [:], to: url) { (responseDic, isError, isNetOn) in
             if isNetOn {
                 //Net is on
@@ -268,7 +271,7 @@ extension OrderReviewVC {
     private func setCustomerPaymentTypeAPI() {
         self.showLoadingIndicator()
         let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/\(UserDefaultsManager.shared.userName)/carts/\(UserDefaultsManager.shared.cartID ?? "")/paymenttype?paymentType=ACCOUNT"
-
+        
         let reqDic: [String: Any] = [:]
         
         APIHelper.shared.put(request: reqDic, to: url) { (responseDic, isError, isNetOn) in
@@ -426,38 +429,38 @@ extension OrderReviewVC {
         var reqDic: [String: Any] = [:]
         reqDic["product"] = productDic
         reqDic["quantity"] = qty
-     /* APIHelper.shared.post(request: params, to: url) { (responseDic, isError, isNetOn) in
-            if isNetOn {
-                //Net is on
-                if isError {
-                    //Error, Try Again
-                    self.hideLoadingIndicator()
-                    self.showAlertWithMessage(message: "Opps Something went wrong please try again.")
-                }
-                else {
-                    //No Error
-                    GetMapperModel.shared.getMapper(mapper: AddProductToCartResponse.self, responseDic, completion: { (responseModel) in
-                        if responseModel?.statusCode == "success" {
-                            self.setAddItemToCartAPI()
-                        }
-                        else {
-                            self.hideLoadingIndicator()
-                            if let respDictObj = responseDic["errors"] as? Array<[String:Any]>, let firstObj = respDictObj.first, let msg = firstObj["message"] as? String {
-                                let alrt = UIAlertController(title: "BEKApp", message: msg, preferredStyle: .alert)
-                                    alrt.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                                    self.present(alrt, animated: true, completion: nil)
-                            }
-                           
-                        }
-                    })
-                }
-            }
-            else {
-                //Net is off
-                self.hideLoadingIndicator()
-                self.showAlertWithMessage(message: "Please check your network connection.")
-            }
-        }*/
+        /* APIHelper.shared.post(request: params, to: url) { (responseDic, isError, isNetOn) in
+         if isNetOn {
+         //Net is on
+         if isError {
+         //Error, Try Again
+         self.hideLoadingIndicator()
+         self.showAlertWithMessage(message: "Opps Something went wrong please try again.")
+         }
+         else {
+         //No Error
+         GetMapperModel.shared.getMapper(mapper: AddProductToCartResponse.self, responseDic, completion: { (responseModel) in
+         if responseModel?.statusCode == "success" {
+         self.setAddItemToCartAPI()
+         }
+         else {
+         self.hideLoadingIndicator()
+         if let respDictObj = responseDic["errors"] as? Array<[String:Any]>, let firstObj = respDictObj.first, let msg = firstObj["message"] as? String {
+         let alrt = UIAlertController(title: "BEKApp", message: msg, preferredStyle: .alert)
+         alrt.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+         self.present(alrt, animated: true, completion: nil)
+         }
+         
+         }
+         })
+         }
+         }
+         else {
+         //Net is off
+         self.hideLoadingIndicator()
+         self.showAlertWithMessage(message: "Please check your network connection.")
+         }
+         }*/
         
         if let params = reqDic as Dictionary<String, Any>?, let urlStr = URL(string: url) {
             var request = URLRequest(url: urlStr)
@@ -562,7 +565,7 @@ extension OrderReviewVC {
                     //No Error
                     GetMapperModel.shared.getMapper(mapper: FinalizeOrderResponse.self, responseDic, completion: { (responseModel) in
                         if responseModel?.entries != nil {
-                           // CoreDataModel.shared.deleteAllCartData()
+                            // CoreDataModel.shared.deleteAllCartData()
                             let nextVC = SuccessOrderVC.instantiate(fromAppStoryboard: .Hotels)
                             self.navigationController?.pushViewController(nextVC, animated: true)
                         }
@@ -744,7 +747,7 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity + 1
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
         }
         self.setCartTotalPrice()
     }
@@ -754,7 +757,7 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+                self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
             self.setCartTotalPrice()
         }
@@ -787,7 +790,7 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity + 1
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
         }
         self.setCartTotalPrice()
     }
@@ -797,7 +800,7 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity = self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemQuantity - 1
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+                self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
             self.setCartTotalPrice()
         }
@@ -807,7 +810,7 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
         self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin = (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin + 0.1).rounded(toPlaces: 1)
         self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
         }
         self.setCartTotalPrice()
     }
@@ -817,7 +820,7 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
             self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin = (self.arrFilteredDatasource[sender.tag].dsrCarListModel.itemMargin - 0.1).rounded(toPlaces: 1)
             self.arrFilteredDatasource[sender.tag].dsrCarListModel = DSRCartItemListModel.calculateCostSubtotal(self.arrFilteredDatasource[sender.tag].dsrCarListModel)
             UIView.performWithoutAnimation {
-            self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
+                self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
             self.setCartTotalPrice()
         }
@@ -834,7 +837,7 @@ extension OrderReviewVC: CollapsibleTableViewSectionDelegate {
         self.arrFilteredDatasource[section].isCollapsed = collapsed
         header.setCollapsed(collapsed)
         UIView.performWithoutAnimation {
-        self.tblvwItemListing.reloadSections(IndexSet(integer: section), with: .none)
+            self.tblvwItemListing.reloadSections(IndexSet(integer: section), with: .none)
         }
     }
 }
