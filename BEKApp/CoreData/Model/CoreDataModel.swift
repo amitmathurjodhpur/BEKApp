@@ -105,6 +105,19 @@ class CoreDataModel: NSObject {
         return result
     }
     
+    public func getDataFromProductList_Offline(for hotelId: Int64) -> [NSManagedObject] {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataEntityList.productList.rawValue)
+        var result: [NSManagedObject] = []
+        //request.predicate = NSPredicate(format: "hotelId = %d", hotelId)
+        request.returnsObjectsAsFaults = false
+        do {
+            result = try self.context.fetch(request) as! [NSManagedObject]
+        } catch {
+            result = []
+        }
+        return result
+    }
+    
     public func deleteProductListData(ProductId productId: NSManagedObjectID) -> Bool {
         let managedObject = self.context.object(with: productId) as! ProductList
         self.context.refresh(managedObject, mergeChanges: false)

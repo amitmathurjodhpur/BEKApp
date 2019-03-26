@@ -14,13 +14,15 @@ class HotelListModel: NSObject, NSCoding {
     var hotelPhone: String!
     var hotelAddress: String!
     var hotelEmailId: String!
+    var hotelContact: String!
     
-    init(with hotelId: String, hotelName: String, hotelPhone: String, hotelAddress: String, hotelEmailId: String) {
+    init(with hotelId: String, hotelName: String, hotelPhone: String, hotelAddress: String, hotelEmailId: String, hotelContact: String) {
         self.hotelId = hotelId
         self.hotelName = hotelName
         self.hotelPhone = hotelPhone
         self.hotelAddress = hotelAddress
         self.hotelEmailId = hotelEmailId
+        self.hotelContact = hotelContact
     }
     
     required convenience init(coder aDecoder: NSCoder) {
@@ -29,7 +31,8 @@ class HotelListModel: NSObject, NSCoding {
         let hotelPhone = aDecoder.decodeObject(forKey: "hotelPhone") as! String
         let hotelAddress = aDecoder.decodeObject(forKey: "hotelAddress") as! String
         let hotelEmailId = aDecoder.decodeObject(forKey: "hotelEmailId") as! String
-        self.init(with: hotelId, hotelName: hotelName, hotelPhone: hotelPhone, hotelAddress: hotelAddress, hotelEmailId: hotelEmailId)
+        let hotelContact = aDecoder.decodeObject(forKey: "hotelContact") as! String
+        self.init(with: hotelId, hotelName: hotelName, hotelPhone: hotelPhone, hotelAddress: hotelAddress, hotelEmailId: hotelEmailId, hotelContact: hotelContact)
     }
     
     func encode(with aCoder: NSCoder){
@@ -38,6 +41,7 @@ class HotelListModel: NSObject, NSCoding {
         aCoder.encode(hotelPhone, forKey: "hotelPhone")
         aCoder.encode(hotelAddress, forKey: "hotelAddress")
         aCoder.encode(hotelEmailId, forKey: "hotelEmailId")
+        aCoder.encode(hotelContact, forKey: "hotelContact")
     }
     public func setHotelData() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -55,4 +59,5 @@ class HotelListModel: NSObject, NSCoding {
         }
         return false
     }
+    
 }

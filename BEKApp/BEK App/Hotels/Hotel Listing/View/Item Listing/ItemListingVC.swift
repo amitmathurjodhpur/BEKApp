@@ -328,7 +328,8 @@ extension ItemListingVC {
     }
     
     private func getCartDataAndSetDatasourceForOfflineProductList() {
-        let dbSource = CoreDataModel.shared.getDataFromProductList(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
+       // let dbSource = CoreDataModel.shared.getDataFromProductList(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
+         let dbSource = CoreDataModel.shared.getDataFromProductList_Offline(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
         for item in dbSource {
             self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: item.hotelId, hotelName: item.hotelName, itemId: item.itemId, itemMargin: item.itemMargin, itemName: item.itemName!, itemPerBagQuantity: item.itemPerBagQuantity!, itemProductionCost: item.itemProductionCost, itemQuantity: item.itemQuantity, itemSubTotal: item.itemSubTotal, itemTitle: item.itemTitle, itemUnitPrice: item.itemUnitPrice)))
         }

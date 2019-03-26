@@ -263,7 +263,18 @@ extension OrderReviewVC {
             else {
                 //Net is off
                 self.hideLoadingIndicator()
-                self.showAlertWithMessage(message: "we couldn’t place your order but it is saved locally. You can submit it later from open items.")
+               let alert = UIAlertController.alert(title: "BEKApp", message: "we couldn’t place your order but it is saved locally. You can submit it later from open items.")
+               
+                let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+                    UIAlertAction in
+                    NSLog("OK Pressed")
+                    let nextVC = SuccessOrderVC.instantiate(fromAppStoryboard: .Hotels)
+                    self.navigationController?.pushViewController(nextVC, animated: true)
+                }
+                alert.addAction(okAction)
+
+                alert.present(in: self)
+               
             }
         }
     }

@@ -151,21 +151,14 @@ extension HotelDetailVC {
         self.setCartTotalPrice()
         self.lblVCTitle.text = hotelDetails.hotelName
         self.lblLocation.text = hotelDetails.hotelAddress
-        /*if hotelDetails.hotelPhone != "0" {
-            self.lblPrimaryContact.text = hotelDetails.hotelPhone
-        }*/
-        
-        if UserDefaultsManager.shared.tmpuserName == "pizzaplanetama@hybris.com" {
-            self.lblPrimaryContact.text = "Primary Contact: Lesha McAllister"
-        } else if UserDefaultsManager.shared.tmpuserName == "earussel@acme.com" {
-            self.lblPrimaryContact.text = "Primary Contact: Earnie Russel"
-        } else if UserDefaultsManager.shared.tmpuserName == "babradley@acme.com" {
-            self.lblPrimaryContact.text = "Primary Contact: Brad Bradley"
-        } else {
-            self.lblPrimaryContact.text = "Hi, here is how you are doing."
+//        if hotelDetails.hotelPhone != "0" {
+//            self.lblPrimaryContact.text = hotelDetails.hotelContact
+//        }
+        if let conatct = hotelDetails.hotelContact {
+             self.lblPrimaryContact.text = "Primary Contact: \(conatct)"
         }
        
-        let _ = self.isCartHavingItems()
+       let _ = self.isCartHavingItems()
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(sendMail(tapGestureRecognizer:)))
         mailIcon.isUserInteractionEnabled = true
@@ -193,8 +186,6 @@ extension HotelDetailVC {
             if itemNames != nil {
                 if !itemNames!.isEmpty {
                     itemNames = itemNames + ", " + item.dsrCarListModel.itemName
-                    
-                   
                 }
             }
             else

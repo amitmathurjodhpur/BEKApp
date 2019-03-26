@@ -141,10 +141,33 @@ extension DashboardVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
             self.navigationController?.pushViewController(nextVC, animated: true)
         case 6:
              let appDelegate = UIApplication.shared.delegate as! AppDelegate
-             if let hotelObj = appDelegate.hotelDetails, self.arrItemListing.count > 0 {
+             if let _ = appDelegate.hotelDetails, self.arrItemListing.count > 0 {
                 let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
+                if let cartObj = self.arrItemListing.first {
+                    let hotelID = String(cartObj.dsrCarListModel.hotelId)
+                    if hotelID == "421603" {
+                        nextVC.hotelDetails = HotelListModel(with: "421603", hotelName: "Big Texan Steakhouse", hotelPhone: "8063726000", hotelAddress: "7701 I-40 East, Amarillo, Tx 79118-0000", hotelEmailId: "alex.thebigtexan@hybris.com", hotelContact:"Alex Lee")
+                    } else if hotelID == "422954" {
+                        nextVC.hotelDetails = HotelListModel(with: "422954", hotelName: "Pizza Planet/Bell", hotelPhone: "0", hotelAddress: "6801 Bell, Amarillo, Tx 79109-0000", hotelEmailId: "pizzaplanet101@hybris.com", hotelContact: "Eddie Todd")
+                    } else if hotelID == "423135" {
+                        nextVC.hotelDetails = HotelListModel(with: "423135", hotelName: "Pizza Planet/Paramount", hotelPhone: "0", hotelAddress: "2400 Paramount, Amarillo, Tx 79109-0000", hotelEmailId: "pizzaplanetama@hybris.com", hotelContact: "Lesha McAllister")
+                    } else if hotelID == "423852" {
+                        nextVC.hotelDetails = HotelListModel(with: "423852", hotelName: "Leal S- Amarillo", hotelPhone: "8063729016", hotelAddress: "1619 S. Kentucky, Bidg. C #318, Amarillo, Tx 79102-0000", hotelEmailId: "becky@hybris.com", hotelContact: "Becky Knapp")
+                    } else if hotelID == "424199" {
+                        nextVC.hotelDetails = HotelListModel(with: "424199", hotelName: "Jorge S Bar Grill", hotelPhone: "0", hotelAddress: "6051 S. Bell St., Amarillo, Tx 79109-0000", hotelEmailId: "", hotelContact: "8063729016")
+                    } else if hotelID == "703358" {
+                        nextVC.hotelDetails = HotelListModel(with: "703358", hotelName: "Ember S Steakhouse", hotelPhone: "0", hotelAddress: "2721 Virginia St, Amarillo, Tx 79109-0000", hotelEmailId: "clardie3@hybris.com", hotelContact: "Chad Lardie")
+                    } else if hotelID == "760852" {
+                        nextVC.hotelDetails = HotelListModel(with: "760852", hotelName: "Jimmy S Egg Wolfin Village", hotelPhone: "8064186752", hotelAddress: "2225 S Georgia, Amarillo, Tx 79109-0000", hotelEmailId: "jdcasasanta@hybris.com", hotelContact: "John Casasanta")
+                    } else if hotelID == "763185" {
+                        nextVC.hotelDetails = HotelListModel(with: "763185", hotelName: "Edes Meat Martket", hotelPhone: "8065846022", hotelAddress: "6103 Hillside Rd., Amarillo, Tx 79109-0000", hotelEmailId: "sandra@hybris.com", hotelContact: "Sandra Rains")
+                    } else if hotelID == "771432" {
+                        nextVC.hotelDetails = HotelListModel(with: "771432", hotelName: "Pak-A-Sak 22 Amarillo", hotelPhone: "0", hotelAddress: "14841 Fm 2590, Amarillo, Tx 79109-0000", hotelEmailId: "", hotelContact: "8065846022")
+                    } else if hotelID == "774410" {
+                        nextVC.hotelDetails = HotelListModel(with: "774410", hotelName: "Jimmy S Egg Midland Ops L", hotelPhone: "4052039403", hotelAddress: "1904 Loop 250 Frontage Ro, Amarillo, Tx 79103-0000", hotelEmailId: "aoneil@hybris.com", hotelContact: "Angela O'Neil")
+                    }
+                }
                 nextVC.isComeFromHistory = true
-                nextVC.hotelDetails = hotelObj
                 appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
                 self.navigationController?.pushViewController(nextVC, animated: true)
              } else {

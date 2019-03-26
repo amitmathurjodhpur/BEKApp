@@ -80,17 +80,17 @@ extension HotelListingVC {
 
         self.customScrollIndicator.insertSubview(CustomScrollViewIndicatorShared.shared.customScrollIndicatorView!, at: 0)
         self.tblvwHotelList.registerCellWithNib(class: HotelListTableViewCell.self)
-        self.arrHotelList.append(HotelListModel(with: "421603", hotelName: "Big Texan Steakhouse", hotelPhone: "8063726000", hotelAddress: "7701 I-40 East, Amarillo, Tx 79118-0000", hotelEmailId: "alex.thebigtexan@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "422954", hotelName: "Pizza Planet/Bell", hotelPhone: "0", hotelAddress: "6801 Bell, Amarillo, Tx 79109-0000", hotelEmailId: "pizzaplanet101@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "423135", hotelName: "Pizza Planet/Paramount", hotelPhone: "0", hotelAddress: "2400 Paramount, Amarillo, Tx 79109-0000", hotelEmailId: "pizzaplanetama@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "423852", hotelName: "Leal S- Amarillo", hotelPhone: "8063729016", hotelAddress: "1619 S. Kentucky, Bidg. C #318, Amarillo, Tx 79102-0000", hotelEmailId: "becky@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "424199", hotelName: "Jorge S Bar Grill", hotelPhone: "0", hotelAddress: "6051 S. Bell St., Amarillo, Tx 79109-0000", hotelEmailId: ""))
+        self.arrHotelList.append(HotelListModel(with: "421603", hotelName: "Big Texan Steakhouse", hotelPhone: "8063726000", hotelAddress: "7701 I-40 East, Amarillo, Tx 79118-0000", hotelEmailId: "alex.thebigtexan@hybris.com", hotelContact:"Alex Lee"))
+        self.arrHotelList.append(HotelListModel(with: "422954", hotelName: "Pizza Planet/Bell", hotelPhone: "0", hotelAddress: "6801 Bell, Amarillo, Tx 79109-0000", hotelEmailId: "pizzaplanet101@hybris.com", hotelContact: "Eddie Todd"))
+        self.arrHotelList.append(HotelListModel(with: "423135", hotelName: "Pizza Planet/Paramount", hotelPhone: "0", hotelAddress: "2400 Paramount, Amarillo, Tx 79109-0000", hotelEmailId: "pizzaplanetama@hybris.com", hotelContact: "Lesha McAllister"))
+        self.arrHotelList.append(HotelListModel(with: "423852", hotelName: "Leal S- Amarillo", hotelPhone: "8063729016", hotelAddress: "1619 S. Kentucky, Bidg. C #318, Amarillo, Tx 79102-0000", hotelEmailId: "becky@hybris.com", hotelContact: "Becky Knapp"))
+        self.arrHotelList.append(HotelListModel(with: "424199", hotelName: "Jorge S Bar Grill", hotelPhone: "0", hotelAddress: "6051 S. Bell St., Amarillo, Tx 79109-0000", hotelEmailId: "", hotelContact: "8063729016"))
         
-        self.arrHotelList.append(HotelListModel(with: "703358", hotelName: "Ember S Steakhouse", hotelPhone: "0", hotelAddress: "2721 Virginia St, Amarillo, Tx 79109-0000", hotelEmailId: "clardie3@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "760852", hotelName: "Jimmy S Egg Wolfin Village", hotelPhone: "8064186752", hotelAddress: "2225 S Georgia, Amarillo, Tx 79109-0000", hotelEmailId: "jdcasasanta@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "763185", hotelName: "Edes Meat Martket", hotelPhone: "8065846022", hotelAddress: "6103 Hillside Rd., Amarillo, Tx 79109-0000", hotelEmailId: "sandra@hybris.com"))
-        self.arrHotelList.append(HotelListModel(with: "771432", hotelName: "Pak-A-Sak 22 Amarillo", hotelPhone: "0", hotelAddress: "14841 Fm 2590, Amarillo, Tx 79109-0000", hotelEmailId: ""))
-        self.arrHotelList.append(HotelListModel(with: "774410", hotelName: "Jimmy S Egg Midland Ops L", hotelPhone: "4052039403", hotelAddress: "1904 Loop 250 Frontage Ro, Amarillo, Tx 79103-0000", hotelEmailId: "aoneil@hybris.com"))
+        self.arrHotelList.append(HotelListModel(with: "703358", hotelName: "Ember S Steakhouse", hotelPhone: "0", hotelAddress: "2721 Virginia St, Amarillo, Tx 79109-0000", hotelEmailId: "clardie3@hybris.com", hotelContact: "Chad Lardie"))
+        self.arrHotelList.append(HotelListModel(with: "760852", hotelName: "Jimmy S Egg Wolfin Village", hotelPhone: "8064186752", hotelAddress: "2225 S Georgia, Amarillo, Tx 79109-0000", hotelEmailId: "jdcasasanta@hybris.com", hotelContact: "John Casasanta"))
+        self.arrHotelList.append(HotelListModel(with: "763185", hotelName: "Edes Meat Martket", hotelPhone: "8065846022", hotelAddress: "6103 Hillside Rd., Amarillo, Tx 79109-0000", hotelEmailId: "sandra@hybris.com", hotelContact: "Sandra Rains"))
+        self.arrHotelList.append(HotelListModel(with: "771432", hotelName: "Pak-A-Sak 22 Amarillo", hotelPhone: "0", hotelAddress: "14841 Fm 2590, Amarillo, Tx 79109-0000", hotelEmailId: "", hotelContact: "8065846022"))
+        self.arrHotelList.append(HotelListModel(with: "774410", hotelName: "Jimmy S Egg Midland Ops L", hotelPhone: "4052039403", hotelAddress: "1904 Loop 250 Frontage Ro, Amarillo, Tx 79103-0000", hotelEmailId: "aoneil@hybris.com", hotelContact: "Angela O'Neil"))
         self.arrFilteredDatasource = self.arrHotelList
         self.setupUI()
     }
