@@ -286,6 +286,7 @@ extension ItemListingVC {
     
     private func getCartDataAndSetDatasource() {
         var dbSource = CoreDataModel.shared.showData(for: .cart) as! [Cart]
+        print(dbSource.count)
         //        if dbSource.count == 0 {
         //            self.createCartForUser()
         //        }

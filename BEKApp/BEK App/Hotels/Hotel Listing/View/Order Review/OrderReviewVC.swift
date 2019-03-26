@@ -174,6 +174,7 @@ extension OrderReviewVC {
     }
     
     private func getCartDataAndSetDatasource() {
+        self.arrItemListing.removeAll()
         let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
         for dbSource in dbSourceFromDB {
             self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: dbSource.hotelId, hotelName: dbSource.hotelName, itemId: dbSource.itemId, itemMargin: dbSource.itemMargin, itemName: dbSource.itemName!, itemPerBagQuantity: dbSource.itemPerBagQuantity!, itemProductionCost: dbSource.itemProductionCost, itemQuantity: dbSource.itemQuantity, itemSubTotal: dbSource.itemSubTotal, itemTitle: dbSource.itemTitle, itemUnitPrice: dbSource.itemUnitPrice)))
@@ -206,6 +207,7 @@ extension OrderReviewVC {
         self.lblMargin.text = "\(margin)" + "%"
         let _ = self.setCartItemToDatabase()
         self.updateDataSourceForDSRMode()
+        let _ = self.isCartHavingItems()
     }
     
     private func filterProduct(_ term: String) {
@@ -216,6 +218,13 @@ extension OrderReviewVC {
             self.arrFilteredDatasource = self.arrItemListing
         }
     }
+    
+    private func isCartHavingItems() -> Bool {
+        let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
+        self.lblCartBadge.text = "\(dbSourceFromDB.count)"
+        return dbSourceFromDB.count > 0 ? true : false
+    }
+    
     private func setAddItemToCartAPI() {
         if self.apiCallIndex < self.arrItemListing.count {
             self.addProductToCartForUserAPI(productId: "\(self.arrItemListing[self.apiCallIndex].dsrCarListModel!.itemId ?? 0)", Quantity: Int(self.arrItemListing[self.apiCallIndex].dsrCarListModel!.itemQuantity))
@@ -230,6 +239,7 @@ extension OrderReviewVC {
 //MARK:- API Calls
 extension OrderReviewVC {
     private func createCartForUserAPI() {
+        self.getCartDataAndSetDatasource()
         self.showLoadingIndicator()
         let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/\(UserDefaultsManager.shared.userName)/carts"
         // let url = "\(HTTPClient.BaseURL.Development.rawValue)/rest/v2/powertools/users/pizzaplanetama@hybris.com/carts"
@@ -833,6 +843,8 @@ extension OrderReviewVC: UITableViewDelegate, UITableViewDataSource, UIScrollVie
             UIView.performWithoutAnimation {
                 self.tblvwItemListing.reloadSections(IndexSet(integer: sender.tag), with: .none)
             }
+            self.setCartTotalPrice()
+        } else {
             self.setCartTotalPrice()
         }
     }
