@@ -115,13 +115,8 @@ class ItemListingVC: BaseVC {
         let _ = self.isCartHavingItems()
         self.isClientModeOn = UserDefaultsManager.shared.isClientModeOn
         
-        
-        
-        
         print(self.arrFilteredDatasource)
         self.setCartTotalPrice()
-        
-        
     }
     
     //MARK:- IB Actions
@@ -136,6 +131,12 @@ class ItemListingVC: BaseVC {
     }
     
     @IBAction func btnReviewTapped(_ sender: UIButton) {
+        appDelegate.TempArrayOrderHistory.removeAll()
+        let dbSourceFromDB = CoreDataModel.shared.showData(for: .cart) as! [Cart]
+        for dbSource in dbSourceFromDB {
+            appDelegate.TempArrayOrderHistory.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: dbSource.hotelId, hotelName: dbSource.hotelName, itemId: dbSource.itemId, itemMargin: dbSource.itemMargin, itemName: dbSource.itemName!, itemPerBagQuantity: dbSource.itemPerBagQuantity!, itemProductionCost: dbSource.itemProductionCost, itemQuantity: dbSource.itemQuantity, itemSubTotal: dbSource.itemSubTotal, itemTitle: dbSource.itemTitle, itemUnitPrice: dbSource.itemUnitPrice)))
+        }
+        
         let nextVC = OrderReviewVC.instantiate(fromAppStoryboard: .Hotels)
         nextVC.hotelDetails = self.hotelDetails
         self.navigationController?.pushViewController(nextVC, animated: true)
@@ -259,17 +260,23 @@ extension ItemListingVC {
                     CoreDataModel.shared.saveDataToProductList(with: model.hotelId, hotelName: model.hotelName, itemMargin: model.itemMargin, itemName: model.itemName, itemPerBagQuantity: model.itemPerBagQuantity, itemProductionCost: model.itemProductionCost, itemQuantity: model.itemQuantity, itemSubTotal: model.itemSubTotal, itemTitle: model.itemTitle, itemUnitPrice: model.itemUnitPrice)
                 }
             }
+            else {
+                self.getCartDataAndSetDatasourceForOfflineProductList()
+            }
         }
         else {
-            for item in dbSource {
-                let _ = CoreDataModel.shared.deleteProductListData(ProductId: item.objectID)
-            }
             if productList != nil {
+                for item in dbSource {
+                    let _ = CoreDataModel.shared.deleteProductListData(ProductId: item.objectID)
+                }
                 for item in productList! {
                     var model = DSRCartItemListModel(with: Int64(Int(self.hotelDetails.hotelId) ?? 0), hotelName: self.hotelDetails.hotelName, itemId: Int64(Int("\(item.code ?? "0")") ?? 0), itemMargin: 0.0, itemName: item.name ?? "Product Name", itemPerBagQuantity: item.summary ?? "", itemProductionCost: Double(item.cost ?? 0.0).rounded(toPlaces: 2), itemQuantity: 0, itemSubTotal: 0.0, itemTitle: item.manufacturer, itemUnitPrice: Double(item.price?.value ?? 0.0).rounded(toPlaces: 2))
                     model = DSRCartItemListModel.calculateCostMargin(model)
                     CoreDataModel.shared.saveDataToProductList(with: model.hotelId, hotelName: model.hotelName, itemMargin: model.itemMargin, itemName: model.itemName, itemPerBagQuantity: model.itemPerBagQuantity, itemProductionCost: model.itemProductionCost, itemQuantity: model.itemQuantity, itemSubTotal: model.itemSubTotal, itemTitle: model.itemTitle, itemUnitPrice: model.itemUnitPrice)
                 }
+            }
+            else {
+                self.getCartDataAndSetDatasourceForOfflineProductList()
             }
         }
     }
@@ -331,8 +338,12 @@ extension ItemListingVC {
     private func getCartDataAndSetDatasourceForOfflineProductList() {
        // let dbSource = CoreDataModel.shared.getDataFromProductList(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
          let dbSource = CoreDataModel.shared.getDataFromProductList_Offline(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
+        self.arrItemListing.removeAll()
         for item in dbSource {
             self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: item.hotelId, hotelName: item.hotelName, itemId: item.itemId, itemMargin: item.itemMargin, itemName: item.itemName!, itemPerBagQuantity: item.itemPerBagQuantity!, itemProductionCost: item.itemProductionCost, itemQuantity: item.itemQuantity, itemSubTotal: item.itemSubTotal, itemTitle: item.itemTitle, itemUnitPrice: item.itemUnitPrice)))
+        }
+        if dbSource.count <= 0 {
+            self.showAlertWithMessage(message: "Please check your network connection.")
         }
         self.getCartDataAndSetDatasource()
     }
@@ -487,6 +498,7 @@ extension ItemListingVC {
                 if isError {
                     //Error, Try Again
                     self.showAlertWithMessage(message: "Opps Something went wrong please try again.")
+                    self.getCartDataAndSetDatasourceForOfflineProductList()
                 }
                 else {
                     //No Error
@@ -500,13 +512,13 @@ extension ItemListingVC {
                             let alrt = UIAlertController(title: "BEKApp", message: "\((responseDic["error"] as? Array<[String:Any]>)?.first?["message"] ?? "Opps Something went wrong please try again.")", preferredStyle: .alert)
                             alrt.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                             self.present(alrt, animated: true, completion: nil)
+                            self.getCartDataAndSetDatasourceForOfflineProductList()
                         }
                     })
                 }
             }
             else {
                 //Net is off
-                //                self.showAlertWithMessage(message: "Please check your network connection.")
                 self.getCartDataAndSetDatasourceForOfflineProductList()
             }
             self.hideLoadingIndicator()

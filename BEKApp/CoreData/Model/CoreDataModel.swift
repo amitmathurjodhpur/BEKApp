@@ -108,7 +108,7 @@ class CoreDataModel: NSObject {
     public func getDataFromProductList_Offline(for hotelId: Int64) -> [NSManagedObject] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataEntityList.productList.rawValue)
         var result: [NSManagedObject] = []
-        //request.predicate = NSPredicate(format: "hotelId = %d", hotelId)
+        request.predicate = NSPredicate(format: "hotelId = %d", hotelId)
         request.returnsObjectsAsFaults = false
         do {
             result = try self.context.fetch(request) as! [NSManagedObject]
@@ -199,7 +199,7 @@ class CoreDataModel: NSObject {
         return result
     }
     
-    public func updateUserData(with hotelId: Int64, hotelName: String?, itemId: Int64, itemMargin: Double, itemName: String, itemPerBagQuantity: String, itemProductionCost: Double, itemQuantity: Int64, itemSubTotal: Double, itemTitle: String?, itemUnitPrice: Double, toppingId: Int64! = 0, toppingName: String? = "", toppingPrice: Double! = 0.0, toOrderID orderId: NSManagedObjectID) -> Bool {
+    public func updateCartData(with hotelId: Int64, hotelName: String?, itemId: Int64, itemMargin: Double, itemName: String, itemPerBagQuantity: String, itemProductionCost: Double, itemQuantity: Int64, itemSubTotal: Double, itemTitle: String?, itemUnitPrice: Double, toppingId: Int64! = 0, toppingName: String? = "", toppingPrice: Double! = 0.0, toOrderID orderId: NSManagedObjectID) -> Bool {
         let managedObject = self.context.object(with: orderId) as! Cart
         self.context.refresh(managedObject, mergeChanges: false)
         managedObject.hotelId = hotelId

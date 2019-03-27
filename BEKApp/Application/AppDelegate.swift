@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-         UserDefaultsManager.shared.isLoggedIn = false
+//         UserDefaultsManager.shared.isLoggedIn = false
         if UserDefaultsManager.shared.isClientModeOn == nil {
            UserDefaultsManager.shared.isClientModeOn = true
         }
