@@ -79,7 +79,6 @@ class ItemListingVC: BaseVC {
             UIView.performWithoutAnimation {
                 self.tblvwItemListing.reloadData()
             }
-            self.setCartTotalPrice()
         }
     }
     private var isFiltered: Bool! = false
@@ -290,6 +289,7 @@ extension ItemListingVC {
         //        if dbSource.count == 0 {
         //            self.createCartForUser()
         //        }
+       
         var i = 0
         for item in self.arrItemListing {
             if let index = dbSource.index(where: {$0.itemId == item.dsrCarListModel.itemId}) {
@@ -329,10 +329,15 @@ extension ItemListingVC {
     }
     
     private func getCartDataAndSetDatasourceForOfflineProductList() {
-       // let dbSource = CoreDataModel.shared.getDataFromProductList(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
-         let dbSource = CoreDataModel.shared.getDataFromProductList_Offline(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
-        for item in dbSource {
-            self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: item.hotelId, hotelName: item.hotelName, itemId: item.itemId, itemMargin: item.itemMargin, itemName: item.itemName!, itemPerBagQuantity: item.itemPerBagQuantity!, itemProductionCost: item.itemProductionCost, itemQuantity: item.itemQuantity, itemSubTotal: item.itemSubTotal, itemTitle: item.itemTitle, itemUnitPrice: item.itemUnitPrice)))
+        let isNetActive = CheckNetwork.checkStatus()
+        if isNetActive {
+            let dbSource = CoreDataModel.shared.getDataFromProductList(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
+            /// let dbSource = CoreDataModel.shared.getDataFromProductList_Offline(for: Int64(self.hotelDetails!.hotelId)!) as! [ProductList]
+            for item in dbSource {
+                self.arrItemListing.append(DSRCartItemListDatasourceModel(withModel: DSRCartItemListModel(with: item.hotelId, hotelName: item.hotelName, itemId: item.itemId, itemMargin: item.itemMargin, itemName: item.itemName!, itemPerBagQuantity: item.itemPerBagQuantity!, itemProductionCost: item.itemProductionCost, itemQuantity: item.itemQuantity, itemSubTotal: item.itemSubTotal, itemTitle: item.itemTitle, itemUnitPrice: item.itemUnitPrice)))
+            }
+        } else {
+             self.arrItemListing =  appDelegate.TempArrayOrderHistory
         }
         self.getCartDataAndSetDatasource()
     }
@@ -506,7 +511,7 @@ extension ItemListingVC {
             }
             else {
                 //Net is off
-                //                self.showAlertWithMessage(message: "Please check your network connection.")
+                  //    self.showAlertWithMessage(message: "Please check your network connection.")
                 self.getCartDataAndSetDatasourceForOfflineProductList()
             }
             self.hideLoadingIndicator()
