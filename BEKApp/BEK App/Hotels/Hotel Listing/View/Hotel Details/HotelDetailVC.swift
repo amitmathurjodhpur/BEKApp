@@ -324,11 +324,13 @@ extension HotelDetailVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
-        nextVC.hotelDetails = self.hotelDetails
-         nextVC.isComeFromHistory = true
-        appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        if indexPath.section == 1 {
+            let nextVC = ItemListingVC.instantiate(fromAppStoryboard: .Hotels)
+            nextVC.hotelDetails = self.hotelDetails
+            nextVC.isComeFromHistory = true
+            appDelegate.TempArrayOrderHistory = self.arrFilteredDatasource
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }
     }
 }
 extension HotelDetailVC: MFMailComposeViewControllerDelegate {
